@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko" data-color-theme="default">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../libs/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../libs/datepicker/datepicker.min.css" />
+    <link rel="stylesheet" href="../../libs/dropzone/dropzone.min.css" />
+    <link rel="stylesheet" href="../../libs/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../../css/styles.css" />
+    <!-- import script -->
+    <script defer src="../../libs/jquery/jquery-3.6.3.min.js"></script>
+    <script defer src="../../libs/bootstrap/bootstrap.bundle.min.js"></script>
+    <script defer src="../../libs/bootstrap/popper.min.js"></script>
+    <script defer src="../../libs/jquery/jquery-ui.js"></script>
+    <script defer src="../../libs/datepicker/datepicker-full.min.js"></script>
+    <script defer src="../../libs/dropzone/dropzone.min.js"></script>
+    <script defer src="../../libs/swiper/swiper-bundle.min.js"></script>
+    <script defer src="../../js/common.js"></script>
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.png" />
+    <title>HRI</title>
+  </head>
+  <body>
+    <div class="body-wrap">
+      <!-- 롯데건설 체험관 교육안내 :: s -->
+      <div id="experience_info">
+	  	<div class="thumb-wrap">
+			<img src="https://picsum.photos/400?random=1" alt="" />
+		</div>
+		<div class="txt-info">
+			<h4 class="title"><b>롯데건설 체험관 교육안내</b>롯데인재개발원 오산 캠퍼스의 안전체험관 세이프티 온(Safety On)을 소개합니다!</h4>
+				<p>
+					<a href="">소개 영상</a>
+					<a href="">교육 안내</a>
+					<a href="">교육 신청</a>
+				</p>
+		</div>
+      </div>
+	  <style>
+	  #experience_info{
+	    display:flex;gap:42px;align-items:center;
+	  	width:1216px;max-width:calc(100% - 4rem);
+		box-sizing:border-box;
+		margin:30px auto;
+		padding:35px;
+	  	border-radius: 16px;
+		border: 1px solid #EEE;
+		background: #F9F9F9;
+	  }
+	  #experience_info .thumb-wrap{
+	  	width:296px;
+		border-radius:14px;
+		overflow:Hidden;
+	  }
+	  #experience_info .thumb-wrap img{
+	     object-fit:cover;width:100%;height:168px;
+	  }
+	  #experience_info .txt-info .title{
+	  	 height:126px;
+	  	 font-size:16px;color:#676767
+	  }
+	  #experience_info .txt-info .title b{
+	  	 display:block;
+		 padding:10px 0;
+		 font-size:28px;color:#171717
+	  }
+	  #experience_info .txt-info p{display:flex;gap:13px;}
+	  #experience_info .txt-info p a{
+	    display:block;min-width:160px;height:42px;line-height:40px;
+		border:1px solid #DEDFDF;border-radius:50px;
+		padding:0 20px;
+		text-align:center;font-size:16px;color:#2E343A;font-weight:400
+	  }
+	  #experience_info .txt-info p a:after{
+	  	 content: "\e91f";
+		 display:inline-block;
+		 margin:-0.5px 0 0 0;
+		 font-family: 'hri_iconset';font-size:24px;opacity: 0.57;
+		 vertical-align:top
+	  }
+	  @media (max-width: 991.98px) {
+	    #experience_info .txt-info p{gap:10px}
+		#experience_info .txt-info p a{min-width:80px;height:36px;line-height:34px;padding:0 10px;font-size:14px;margin-top:5px}
+		#experience_info .txt-info p a:after{font-size:18px;}
+	  }
+	  @media (max-width: 767.98px) {
+	    #experience_info{display:block;max-width:calc(100% - 2rem);padding:20px}
+		#experience_info .thumb-wrap{width:100%;}
+		#experience_info .thumb-wrap img{height:44vw}
+		#experience_info .txt-info .title{height:auto;margin:20px 0;font-size:14px;text-align:center;word-break:keep-all}
+		#experience_info .txt-info .title b{font-size:22px;}
+		#experience_info .txt-info p{display:block;text-align:center;font-size:0}
+		#experience_info .txt-info p a{display:inline-block;min-width:50px;height:32px;line-height:30px;padding:0 11px;margin:2px;font-size:12px;}
+		#experience_info .txt-info p a:after{font-size:16px;}
+	  }
+	  </style>
+      <!-- 롯데건설 체험관 교육안내 :: e -->
+    </div>
+  </body>
+</html>

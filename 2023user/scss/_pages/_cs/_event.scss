@@ -1,0 +1,135 @@
+.cs {
+  padding-top: 1.5rem;
+
+  .event {
+    .tb-cs-event {
+      tbody {
+        tr {
+          td {
+            &:last-of-type {
+              color: var(--gray-color-700);
+            }
+          }
+        }
+        
+        td {
+          &:nth-child(2){
+            text-align: left;
+            font-size: 1rem;
+            font-weight: 600;
+            &:hover{
+              text-decoration:underline;
+              cursor:pointer;
+            }
+            a{
+              text-decoration:none;
+            }
+          }
+
+          i {
+            font-size: 1.125rem;
+            color: var(--gray-color-500);
+          }
+        }
+      }
+    }
+  }
+}
+
+/*
+* responsive
+*/
+
+@media (max-width: 1399.98px) {
+}
+
+@media (max-width: 1199.98px) {
+}
+
+@media (max-width: 991.98px) {
+}
+
+@media (max-width: 767.98px) {
+  .cs {
+    padding-top: 0;
+  }
+
+  .event {
+    .tb-cs-event {
+      .table {
+        min-width: 100%;
+
+        col {
+          width: 100% !important;
+
+          &:first-child{
+            display: none;
+          }
+        }
+
+        thead {
+          display: none;
+        }
+
+        tbody {
+          tr {
+            position: relative;
+            border-bottom: 1px solid var(--gray-color-300);
+            display: block;
+            padding: 1.5rem 1rem;
+
+            &:last-child {
+              border-color: var(--gray-color-900);
+            }
+          }
+
+          td {
+            display: block;
+            border-bottom: none;
+            text-align: left;
+            padding: 0;
+            height: auto;
+
+            &:first-child{
+              display: none;
+              margin-top: 0;
+            }
+            &:nth-child(2){
+              padding-right:60px
+            }
+            &:nth-child(3) {
+              @include multi-text-overflow(1);
+              margin-top: 0.5rem;
+              font-weight: 400;
+              &:before{
+                content:'이벤트기간 : ';
+                color:var(--gray-color-600);
+              }
+            }
+
+            &:nth-child(4){
+              position:absolute;top:1.5rem;right:1.5rem;
+            }
+            &:nth-child(5){
+              &:before{
+                content:'등록일 : ';
+                color:var(--gray-color-600);
+              }
+            }
+
+            &:last-child {
+              margin-top: 0.5rem;
+            }
+
+            &.use-inquiry {
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+}

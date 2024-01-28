@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko" data-color-theme="default">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../libs/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../../libs/datepicker/datepicker.min.css" />
+    <link rel="stylesheet" href="../../libs/dropzone/dropzone.min.css" />
+    <link rel="stylesheet" href="../../libs/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../../libs/tomselect/tom-select.css" />
+    <link rel="stylesheet" href="../../css/styles.css" />
+    <!-- import script -->
+    <script defer src="../../libs/jquery/jquery-3.6.3.min.js"></script>
+    <script defer src="../../libs/bootstrap/bootstrap.bundle.min.js"></script>
+    <script defer src="../../libs/bootstrap/popper.min.js"></script>
+    <script defer src="../../libs/jquery/jquery-ui.js"></script>
+    <script defer src="../../libs/datepicker/datepicker-full.min.js"></script>
+    <script defer src="../../libs/dropzone/dropzone.min.js"></script>
+    <script defer src="../../libs/swiper/swiper-bundle.min.js"></script>
+    <script defer src="../../libs/tomselect/tom-select.complete.min.js"></script>
+    <script defer src="../../js/common.js"></script>
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.png" />
+    <title>HRI</title>
+  </head>
+  <body>
+  <div class="pop_new_wrap pop_process review">
+  	<div class="pop_new_head">
+		<h1>수강후기 </h1>
+			<button type="button" class="btn-close"></button>
+	</div>
+  	<div class="pop_new_ct">
+		<div class="process_ct">
+			<div class="summary">
+				<dl>
+					<dt><i>온라인 교육</i><span>자기계발</span><span>인문</span><span>철학</span></dt>
+					<dd><b>2023 울산광역시 일상생활 속, 함께 실천하는 정보보안</b></dd>
+					<dd><time>교육기간(시간)<span>2023/10/01~2023/10/31(2h)</span></time></dd>
+				</dl>
+			</div>
+			<div class="ct">	
+				<h3>교육후기</h3>
+					<div class="smart-editor-wrap">
+					</div>
+					<div class="add-star2">
+						<h3>과정 만족도</h3>
+						<ul>
+							<li title="1점"></li>
+							<li title="2점"></li>
+							<li title="3점"></li>
+							<li title="4점"></li>
+							<li title="5점"></li>
+						</ul>
+						<b></b>
+					</div>
+					<div class="add-star2">
+						<h3>강사 만족도</h3>
+						<ul>
+							<li title="1점"></li>
+							<li title="2점"></li>
+							<li title="3점"></li>
+							<li title="4점"></li>
+							<li title="5점"></li>
+						</ul>
+						<b></b>
+					</div>
+					<script defer>
+					document.addEventListener('DOMContentLoaded', () => {
+						/*
+					 $(".add-star2 li").hover(function(){
+						 if($(this).siblings("li").hasClass("on")) {
+						 } else {
+							 $(this).parents(".add-star2").find("b").text($(this).attr("title"));
+						 }
+					 });
+					 */
+					 $(".add-star2 ul li").click(function(){
+						$(this).addClass("on");
+						$(this).siblings("li").not(this).removeClass("on");
+						$(this).parents(".add-star2").find("b").text($(this).attr("title"));
+					});
+				  });
+				  </script>
+			</div>
+			<div class="btn_wrap">
+				<button class="btns btns-black btns-outline">닫기</button>
+				<button class="btns">저장</button>
+			</div>
+		</div>
+	</div>
+  </div>
+  </body>
+</html>

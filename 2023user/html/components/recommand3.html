@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko" data-color-theme="default">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../libs/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../libs/datepicker/datepicker.min.css" />
+    <link rel="stylesheet" href="../../libs/dropzone/dropzone.min.css" />
+    <link rel="stylesheet" href="../../libs/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../../css/styles.css" />
+    <!-- import script -->
+    <script defer src="../../libs/jquery/jquery-3.6.3.min.js"></script>
+    <script defer src="../../libs/bootstrap/bootstrap.bundle.min.js"></script>
+    <script defer src="../../libs/bootstrap/popper.min.js"></script>
+    <script defer src="../../libs/jquery/jquery-ui.js"></script>
+    <script defer src="../../libs/datepicker/datepicker-full.min.js"></script>
+    <script defer src="../../libs/dropzone/dropzone.min.js"></script>
+    <script defer src="../../libs/swiper/swiper-bundle.min.js"></script>
+    <script defer src="../../js/common.js"></script>
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.png" />
+    <title>HRI</title>
+  </head>
+  <body>
+    <div class="body-wrap">
+      <!-- 추천시리즈1 TYPE3 :: s -->
+      <div id="ctvtoday01" class="type3">
+        <div class="main-contents-wrap">
+          <div class="title-btns-wrap">
+            <h3>추천 시리즈</h3>
+            <div class="swiper-btn-wrap">
+              <div class="swiper-btn-prev"></div>
+              <div class="swiper-btn-next"></div>
+            </div>
+          </div>
+          <p class="desc">최근 가장 많은 추천을 받은 Best seller 강의!</p>
+          <div class="recommand-content swiper">
+            <div class="contents-list swiper-wrapper">
+              <div class="items swiper-slide">
+                <a href="#">
+                  <div class="thumb-wrap">
+                    <img src="https://picsum.photos/400?random=1" alt="" />
+                  </div>
+                  <div class="txt-info">
+                    <h4 class="title">BODYFULNESS</h4>
+                    <p class="creator">남희경</p>
+                    <p class="h-tag">
+                      <span>호흡</span>
+                      <span>리추얼</span>
+                      <span>리듬</span>
+                      <span>자극</span>
+                    </p>
+                  </div>
+                </a>
+              </div>
+  
+              <div class="items swiper-slide">
+                <a href="#">
+                  <div class="thumb-wrap">
+                    <img src="https://picsum.photos/400?=2" alt="" />
+                  </div>
+                  <div class="txt-info">
+                    <h4 class="title">콘텐츠 권력의 시대</h4>
+                    <p class="creator">남희경</p>
+                    <p class="h-tag">
+                      <span>호흡</span>
+                      <span>리추얼</span>
+                      <span>리듬</span>
+                      <span>자극</span>
+                    </p>
+                  </div>
+                </a>
+              </div>
+  
+              <div class="items swiper-slide">
+                <a href="#">
+                  <div class="thumb-wrap">
+                    <!-- <img src="https://picsum.photos/400?random=3" alt=""> -->
+                  </div>
+                  <div class="txt-info">
+                    <h4 class="title">나무의 지혜, 나는 나무처럼살고 싶다</h4>
+                    <p class="creator">남희경</p>
+                    <p class="h-tag">
+                      <span>호흡</span>
+                      <span>리추얼</span>
+                      <span>리듬</span>
+                      <span>자극</span>
+                    </p>
+                  </div>
+                </a>
+              </div>
+  
+              <div class="items swiper-slide">
+                <a href="#">
+                  <div class="thumb-wrap">
+                    <img src="https://picsum.photos/400?random=4" alt="" />
+                  </div>
+                  <div class="txt-info">
+                    <h4 class="title">위기극복 방정식, RE:티핑포인트</h4>
+                    <p class="creator">남희경</p>
+                    <p class="h-tag">
+                      <span>호흡</span>
+                      <span>리추얼</span>
+                      <span>리듬</span>
+                      <span>자극</span>
+                    </p>
+                  </div>
+                </a>
+              </div>
+  
+              <div class="items swiper-slide">
+                <a href="#">
+                  <div class="thumb-wrap">
+                    <img src="https://picsum.photos/400?random=5" alt="" />
+                  </div>
+                  <div class="txt-info">
+                    <h4 class="title">막내가 가장 인기가 좋은 이유는 뭘까?</h4>
+                    <p class="creator">세상에서 가장 재미있는 88가지 심리실험</p>
+                    <p class="h-tag">
+                      <span>호흡</span>
+                      <span>리추얼</span>
+                      <span>리듬</span>
+                      <span>자극</span>
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script defer>
+        document.addEventListener('DOMContentLoaded', () => {
+          function createSwiperRecomm1(target) {
+            const swiperWrap = [...target.children].find((item) => {
+              if (item.classList.contains('swiper-wrapper')) return item;
+            });
+            const swiperLists = [...swiperWrap.children].map((item) => item.cloneNode(true));
+            swiperLists.forEach((item) => swiperWrap.append(item));
+
+            const swiper = new Swiper(target, {
+              loop: true,
+              //loopAdditionalSlides: 1,
+              slidesPerView: 2.5,
+              //loopedSlides: 3,
+              spaceBetween: 8,
+              navigation: {
+                nextEl: '#ctvtoday01 .swiper-btn-next',
+                prevEl: '#ctvtoday01 .swiper-btn-prev',
+              },
+              autoplay: {
+                delay: 54000,
+              },
+              breakpoints: {
+                576: {
+                  slidesPerView: 2.5,
+                  spaceBetween: 8,
+                },
+                768: {
+                  slidesPerView: 3,
+                  spaceBetween: 16,
+                },
+                992: {
+                  slidesPerView: 4,
+                  spaceBetween: 16,
+                },
+              },
+            });
+          }
+          createSwiperRecomm1(document.querySelector('#ctvtoday01 .recommand-content'));
+        });
+      </script>
+      <!-- 추천시리즈1 TYPE3 :: e -->
+    </div>
+  </body>
+</html>

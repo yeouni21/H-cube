@@ -1,0 +1,138 @@
+#footerType1 {
+  width: 100%;
+  background-color: #fff;
+
+  .footer-items-wrap {
+    border-top: 1px solid var(--gray-color-500);
+    padding-top: 2.5rem;
+    padding-bottom: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-items {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer-nav {
+    .items {
+      display: inline-block;
+      font-size: 0.875rem;
+      font-weight: 700;
+      color: var(--gray-color-900);
+      margin-right: 2.5rem;
+    }
+  }
+
+  .footer-corp {
+    margin-top: 1.5rem;
+
+    .items {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 400;
+      color: var(--gray-color-900);
+      margin-right: 0.25rem;
+
+      &:first-child {
+        &::after {
+          content: '∙';
+          display: inline-block;
+          font-size: 0.875rem;
+          margin-left: 0.375rem;
+        }
+      }
+    }
+  }
+
+  .footer-helpcenter {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: var(--gray-color-900);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .txt {
+      margin-right: 0.75rem;
+    }
+
+    .num {
+      font-size: 1.5rem;
+    }
+  }
+
+  .footer-copy {
+    margin-top: 1rem;
+
+    .txt {
+      font-size: 0.75rem;
+      font-weight: 400;
+      color: var(--gray-color-500);
+      word-break: break-all;
+    }
+  }
+}
+
+/*
+* responsive
+*/
+
+@media (max-width: 1399.98px) {
+}
+
+@media (max-width: 1299.98px) {
+  #footerType1 {
+    .footer-wrap {
+      border-top: 1px solid var(--gray-color-500);
+    }
+    
+    .footer-items-wrap {
+      border-top: none;
+    }
+  }
+}
+
+@media (max-width: 1199.98px) {
+}
+
+@media (max-width: 991.98px) {
+  #footerType1 {
+    .footer-nav {
+      .items {
+        margin-right: 1.5rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  #footerType1 {
+    .footer-items-wrap {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+
+      flex-direction: column-reverse;
+      align-items: flex-start;
+    }
+
+    .footer-nav {
+      display: none;
+    }
+
+    .footer-corp {
+      margin-top: 0.875rem;
+    }
+
+    .footer-helpcenter {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+}

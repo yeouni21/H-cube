@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko" data-color-theme="default">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../libs/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../libs/datepicker/datepicker.min.css" />
+    <link rel="stylesheet" href="../../libs/dropzone/dropzone.min.css" />
+    <link rel="stylesheet" href="../../libs/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../../css/styles.css" />
+    <!-- import script -->
+    <script defer src="../../libs/jquery/jquery-3.6.3.min.js"></script>
+    <script defer src="../../libs/bootstrap/bootstrap.bundle.min.js"></script>
+    <script defer src="../../libs/bootstrap/popper.min.js"></script>
+    <script defer src="../../libs/jquery/jquery-ui.js"></script>
+    <script defer src="../../libs/datepicker/datepicker-full.min.js"></script>
+    <script defer src="../../libs/dropzone/dropzone.min.js"></script>
+    <script defer src="../../libs/swiper/swiper-bundle.min.js"></script>
+    <script defer src="../../js/common.js"></script>
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.png" />
+    <title>HRI</title>
+  </head>
+  <body>
+    <div class="body-wrap">
+      <!-- GPT 개인추천 과정 :: s -->
+		  <div id="gpt_comm">
+		  	<div class="main-contents-wrap">
+				<h3><b>GPT Choice</b>내게 필요한 강의만 맞춤 추천!</h3>
+					<div class="swiper">
+						<ul class="swiper-wrapper">
+							<li class="items swiper-slide">
+								<h4>1. 경영 에센셜</h4>
+									<div>경영학의 기본 개념과 이론을 배우며 조직의 운영과 의사 결정에 대한 전반적인 이해를 갖게 됩니다.  경영 역량을 향상시켜 조직 내에서의 리더십과 결과적인 성과 향상에 도움이 될 것입니다.</div>
+							</li>
+							<li class="items swiper-slide">
+								<h4>2. 경영 에센셜</h4>
+									<div>경영학의 기본 개념과 이론을 배우며 조직의 운영과 의사 결정에 대한 전반적인 이해를 갖게 됩니다. <br />
+									경영 역량을 향상시켜 조직 내에서의 리더십과 결과적인 성과 향상에 도움이 될 것입니다. 경영 역량을 향상시켜 조직 내에서의 리더십과 결과적인 성과 향상에 도움이 될 것입니다. 경영 역량을 향상시켜 조직 내에서의 리더십과 결과적인 성과 향상에 도움이 될 것입니다.</div>
+							</li>
+							<li class="items swiper-slide">
+								<h4>3. 경영 에센셜</h4>
+									<div>경영학의 기본 개념과 이론을 배우며 조직의 운영과 의사 결정에 대한 전반적인 이해를 갖게 됩니다. <br />
+									경영 역량을 향상시켜 조직 내에서의 리더십과 결과적인 성과 향상에 도움이 될 것입니다.</div>
+							</li>
+							<li class="items swiper-slide">
+								<h4>4. 경영 에센셜</h4>
+									<div>경영학의 기본 개념과 이론을 배우며 조직의 운영과 의사 결정에 대한 전반적인 이해를 갖게 됩니다. <br />
+									경영 역량을 향상시켜 조직 내에서의 리더십과 결과적인 성과 향상에 도움이 될 것입니다.</div>
+							</li>
+						</ul>
+						<div class="swiper-pagination"></div>
+						<div class="swiper-btn-wrap">
+						  <div class="swiper-button-prev"></div>
+						  <div class="swiper-button-next"></div>
+						</div>
+					</div>
+			</div>
+		  </div>
+		  <script defer>
+			document.addEventListener('DOMContentLoaded', () => {
+			  
+			  if($("#gpt_comm .swiper-slide").length > 1) {
+				  const createSwiperGpt = new Swiper('#gpt_comm .swiper', {
+					loop : true,
+					autoHeight : true,
+					slidesPerView : 1,
+					spaceBetween: 0,
+					pagination: {
+					  el: '#gpt_comm .swiper-pagination',
+					  clickable: true,
+					},
+					navigation: {
+					  nextEl: '#gpt_comm .swiper-button-next',
+					  prevEl: '#gpt_comm .swiper-button-prev',
+					},
+				  });
+				  $("#gpt_comm .swiper-pagination").fadeIn(0);
+			  }
+			  $( ".main_swiper_pop" ).draggable();
+			});
+		  </script>
+		  <!-- GPT 개인추천 과정 :: e -->
+    </div>
+  </body>
+</html>

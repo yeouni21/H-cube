@@ -1,0 +1,100 @@
+.learning-consulting {
+  .tb-learning-consulting {
+    tbody {
+      tr {
+        td {
+          &:last-of-type {
+            color: var(--gray-color-700);
+          }
+        }
+      }
+
+      td {
+        &:nth-child(3) {
+          text-align: left;
+          font-size: 1rem;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+/*
+* responsive
+*/
+
+@media (max-width: 1399.98px) {
+}
+
+@media (max-width: 1199.98px) {
+}
+
+@media (max-width: 991.98px) {
+}
+
+@media (max-width: 767.98px) {
+  .learning-consulting {
+    .tb-learning-consulting {
+      .table {
+        min-width: 100%;
+
+        col {
+          width: 100%;
+
+          &:first-child,
+          &:nth-child(2) {
+            display: none;
+          }
+        }
+
+        thead {
+          display: none;
+        }
+
+        tbody {
+          tr {
+            position: relative;
+            border-bottom: 1px solid var(--gray-color-300);
+            display: block;
+            padding: 1.5rem 1rem;
+          }
+
+          td {
+            display: block;
+            border-bottom: none;
+            text-align: left;
+            padding: 0;
+            height: auto;
+            max-width: 14rem;
+
+            &:first-child,
+            &:nth-child(2) {
+              display: none;
+              margin-top: 0;
+            }
+
+            &:nth-child(3) {
+              @include text-overflow;
+              font-weight: 400;
+            }
+
+            &:nth-child(4) {
+              position: absolute;
+              top: 50%;
+              right: 1rem;
+              transform: translateY(-50%);
+            }
+
+            &:last-child {
+              margin-top: 0.75rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+}

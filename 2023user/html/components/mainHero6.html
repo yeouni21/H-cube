@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko" data-color-theme="default">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../libs/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../libs/datepicker/datepicker.min.css" />
+    <link rel="stylesheet" href="../../libs/dropzone/dropzone.min.css" />
+    <link rel="stylesheet" href="../../libs/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../../css/styles.css" />
+    <!-- import script -->
+    <script defer src="../../libs/jquery/jquery-3.6.3.min.js"></script>
+    <script defer src="../../libs/bootstrap/bootstrap.bundle.min.js"></script>
+    <script defer src="../../libs/bootstrap/popper.min.js"></script>
+    <script defer src="../../libs/jquery/jquery-ui.js"></script>
+    <script defer src="../../libs/datepicker/datepicker-full.min.js"></script>
+    <script defer src="../../libs/dropzone/dropzone.min.js"></script>
+    <script defer src="../../libs/swiper/swiper-bundle.min.js"></script>
+    <script defer src="../../js/common.js"></script>
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.png" />
+    <title>HRI</title>
+  </head>
+  <body>
+    <div class="body-wrap">
+      <!-- mainHero6 :: s -->
+      <div id="mainHero6">
+        <div class="main-content swiper">
+          <ul class="contents-list swiper-wrapper">
+
+			<li class="items swiper-slide" style="background-color:#4534AC">
+				<div class="txt-wrap">
+					<dl>
+						<dt>환영합니다!  울산광역시 e인재개발원 입니다.</dt>
+						<dd>울산광역시 사이버연수원에 오신걸 환영합니다.</dd>
+						<dd>빠르게 뛰다 보면, 어느 순간 호흡이 턱 막히는 순간이 옵니다. <br />
+						인생의 달리기 앞에서 우리가 스스로 속도와 숨을 조절할 수 있는 방법은 무엇일까요? <br />
+						오롯이 나만의 삶의 이유를 발견하는 시간이 우리에게는 필요합니다.</dd>
+					</dl>
+					<img src="../../images/main/@main_visual2.png" alt="">
+				</div>
+            </li>
+			<li class="items swiper-slide" style="background-color:#555">
+				<div class="txt-wrap">
+					<dl>
+						<dt>환영합니다!  울산광역시 e인재개발원 입니다.</dt>
+						<dd>울산광역시 사이버연수원에 오신걸 환영합니다.</dd>
+						<dd>빠르게 뛰다 보면, 어느 순간 호흡이 턱 막히는 순간이 옵니다. <br />
+						인생의 달리기 앞에서 우리가 스스로 속도와 숨을 조절할 수 있는 방법은 무엇일까요? 오롯이 나만의 삶의 이유를 발견하는 시간이 우리에게는 필요합니다.</dd>
+					</dl>
+					<img src="../../images/main/@main_visual2.png" alt="">
+				</div>
+            </li>
+			<li class="items swiper-slide" style="background-color:#4534AC">
+				<div class="txt-wrap">
+					<dl>
+						<dt>환영합니다!  울산광역시 e인재개발원 입니다.</dt>
+						<dd>울산광역시 사이버연수원에 오신걸 환영합니다.</dd>
+						<dd><a href="">자세히 보기</a></dd>
+					</dl>
+					<img src="../../images/main/@main_visual2.png" alt="">
+				</div>
+      </li>
+      <li class="items swiper-slide" style="background-color:#4534AC">
+				<div class="txt-wrap">
+					<dl>
+            <dt>울산광역시 e-인재개발원</dt>
+						<dd>Renewal OPEN!​</dd>
+            <dd>2024년을 맞이하여 인재개발원이 새롭게 오픈하였습니다. ​ <br />
+              더욱 새로워진 인재개발원과 유익한 학습 과정을 확인해보세요!​</dd>
+						<dd><a href="">학습 매뉴얼 바로가기</a></dd>
+					</dl>
+					<img src="../../images/main/@main_visual2.png" alt="">
+				</div>
+      </li>
+      <li class="items swiper-slide" style="background-color:#4534AC">
+				<div class="txt-wrap">
+					<dl>
+            <dt>울산광역시 e-인재개발원</dt>
+						<dd>Renewal OPEN!​</dd>
+            <dd>2024년을 맞이하여 인재개발원이 새롭게 오픈하였습니다. ​ <br />
+              더욱 새로워진 인재개발원과 유익한 학습 과정을 확인해보세요!​</dd>
+					</dl>
+					<img src="../../images/main/@main_visual2.png" alt="">
+				</div>
+      </li>
+
+          </ul>
+          <div class="swiper-option">
+            <div class="swiper-pagination"></div>
+            <div class="swiper-btn-wrap">
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script defer>
+        document.addEventListener('DOMContentLoaded', () => {
+          const createSwiperMainHero6 = new Swiper('#mainHero6 .main-content', {
+            loop : true,
+			autoHeight : true,
+            slidesPerView : 1,
+            spaceBetween: 0,
+            pagination: {
+              el: '#mainHero6 .swiper-pagination',
+              clickable: true,
+            },
+            navigation: {
+              nextEl: '#mainHero6 .swiper-button-next',
+              prevEl: '#mainHero6 .swiper-button-prev',
+            },
+            // breakpoints: {
+            //   768: {
+            //     spaceBetween: 30,
+            //   },
+            // },
+          });
+		  if($("#mainHero6 .swiper-slide").length > 1) {
+			  $(".swiper-option").fadeIn(0);
+		  }
+
+        });
+      </script>
+      <!-- mainHero6 :: e -->
+    </div>
+  </body>
+</html>

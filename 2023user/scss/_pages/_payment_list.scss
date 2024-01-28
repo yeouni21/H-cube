@@ -1,0 +1,77 @@
+.payment-list {
+  .comm-list-head {
+    .search-wrap {
+      max-width: 18.75rem;
+    }
+
+    .period-group {
+      margin-right: auto;
+    }
+  }
+
+  .comm-list {
+    .list-wrap {
+      .list-item {
+        .desc-wrap {
+          padding-right: 0;
+          .desc-top {
+            flex-direction: row;
+          }
+        }
+      }
+    }
+  }
+}
+
+// period-group
+.period-group {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .select-peroid {
+    display: flex;
+    position: relative;
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: var(--gray-color-700);
+    cursor: pointer;
+
+    &:first-of-type {
+      .label-radio {
+        border-radius: .25rem 0 0 .25rem;
+      }
+    }
+
+    &:last-of-type {
+      .label-radio {
+        border-radius: 0 .25rem .25rem 0;
+      }
+    }
+
+    input {
+      &[type='radio'] {
+        position: absolute;
+        opacity: 0;
+
+        &:checked {
+          & + .label-radio {
+            color: var(--white-color);
+            background-color: var(--black-color);
+          }
+        }
+      }
+    }
+
+    > .label-radio {
+      height: 2.5rem;
+      width: 3.5rem;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--gray-color-50);
+      font-weight: 600;
+    }
+  }
+}

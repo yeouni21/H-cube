@@ -1,0 +1,66 @@
+@import './_common/variables';
+@import './_common/mixins';
+@import './_common/default';
+@import './_common/common';
+@import './_common/layout';
+@import './_common/component';  // 03.07 공통 버튼 추가 중
+@import './_common/modal';
+@import './_common/loading';  // 03.20 로딩 추가
+@import './_components/mainHero1';
+@import './_components/mainHero2';
+@import './_components/mainHero3';
+@import './_components/headerType1';
+@import './_components/headerType2';
+@import './_components/footerType1';
+@import './_components/footerType2';
+@import './_components/recommand1';
+@import './_components/recommand2';
+@import './_components/curation1';
+@import './_components/curation2';
+@import './_components/contentsPlus1';
+@import './_components/contentsPlus2';
+@import './_components/keyword1';
+@import './_components/keyword2';
+@import './_components/notice1';
+@import './_components/notice2';
+@import './_components/myStatus';
+//sub-component
+@import './_sub_components/sub_components';
+@import './_sub_components/comm_list';
+@import './_sub_components/comm_detail';
+@import './_sub_components/tables';
+@import './_sub_components/toolbar_tab';
+@import './_sub_components/toolbar_mystatus';
+@import './_sub_components/review';
+@import './_sub_components/board_detail';
+@import './_sub_components/board_write';
+@import './_sub_components/calendar';
+//page는 제일 하단
+@import './_pages/enrolment';
+@import './_pages/total_search';
+@import './_pages/_enrolment/process';
+@import './_pages/_mypage/my_info_edit';
+@import './_pages/_mypage/my_notification';
+@import './_pages/_mypage/reward';
+@import './_pages/_mypage/learning_consulting';
+@import './_pages/_cs/notice';
+@import './_pages/_cs/event';
+@import './_pages/_cs/FAQ';
+@import './_pages/_cs/myconsulting';
+@import './_pages/_cs/delivery';
+@import './_pages/_cs/research';
+@import './_pages/_cs/guide';
+@import './_pages/_member/terms';
+@import './_pages/_member/login';
+@import './_pages/_member/join';
+@import './_pages/_member/join_complete';
+@import './_pages/_member/member_popup';
+@import './_pages/errorpage';
+@import './_pages/diagnosis';
+@import './_pages/popup';
+@import './_pages/learning_list';
+@import './_pages/learning_reviews';
+@import './_pages/payment_list';
+@import './_pages/filter';
+@import './_pages/pairng_list';
+

@@ -1,0 +1,145 @@
+.pairing-list {
+  .comm-list {
+    padding: 2rem;
+    margin-left: -2rem;
+    margin-right: -2rem;
+    position: relative;
+
+    &::after {
+      content: '';
+      height: 1px;
+      position: absolute;
+      display: block;
+      left: 2rem;
+      right: 2rem;
+      bottom: 0;
+      background-color: var(--gray-color-300);
+    }
+
+    &:last-of-type {
+      &::after {
+        content: none;
+      }
+    }
+
+    &.today {
+      background-color: var(--primary-color-25);
+      border-radius: 1.5rem;
+      border-bottom: none;
+
+      &::after {
+        content: none;
+      }
+
+      .date-title {
+        &::after {
+          content: 'TODAY';
+          display: block;
+          height: 1.5rem;
+          padding: 0 0.625rem;
+          background-color: var(--primary-color-500);
+          font-size: 0.875rem;
+          font-weight: 700;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: var(--white-color);
+          border-radius: 0.75rem;
+          margin-left: 0.5rem;
+        }
+      }
+    }
+
+    .date-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .btn-wrap {
+    width: 100%;
+    border-top: 1px solid var(--gray-color-900);
+    height: 3.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .btn-add-items {
+      flex: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem 1.5rem;
+
+      &::after {
+        content: '\e900';
+        font-family: 'hri_iconset';
+        speak: never;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        margin-left: .5rem;
+      }
+    }
+  }
+}
+
+/*
+* responsive
+*/
+
+@media (max-width: 1399.98px) {
+}
+
+@media (max-width: 1199.98px) {
+  .pairing-list {
+    .comm-list {
+      &.today {
+        border-radius: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+}
+
+@media (max-width: 767.98px) {
+  .pairing-list {
+    .comm-list {
+
+      .list-item {
+        background-color: transparent;
+      }
+    }
+
+    .btn-wrap {
+      border: none;
+      height: auto;
+
+      .btn-add-items {
+        border: 1px solid var(--primary-color-500);
+        color: var(--primary-color-500);
+        height: 2.5rem;
+        padding: 0;
+        width: 100%;
+        border-radius: .25rem;
+        font-weight: 600;
+
+        &::after {
+          content: '\e916';
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+}

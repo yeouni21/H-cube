@@ -1,0 +1,139 @@
+.myinfo-edit {
+  padding-top: 1.125rem;
+  max-width: 26.5rem;
+  margin: 0 auto;
+
+  .row {
+    padding-top: 1.5rem;
+
+    &:first-child {
+      padding-top: 0;
+    }
+  }
+
+  .profile-img {
+    position: relative;
+    width: 5rem;
+    height: 5rem;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-color: var(--gray-color-200);
+    
+    .thumbnail {
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+  
+      &::before {
+        content: '';
+        display: block;
+        width: 5rem;
+        height: 5rem;
+        background: url('../images/header/thumb_profile_default.png') center/5rem no-repeat;
+      }
+  
+      &::after {
+        content: '\e933';
+        font-family: 'hri_iconset';
+        display: inline-block;
+        width: 1.875rem;
+        height: 1.875rem;
+        font-size: 1.375rem;
+        line-height: 1.3;
+        color: var(--white-color);
+        background-color: var(--black-color);
+        border: 2px solid var(--white-color);
+        border-radius: 50%;
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+    }
+  }
+
+  .address {
+    .detail-address {
+      display: block;
+
+      .detail {
+        &:first-child {
+          margin-bottom: 0.5rem;
+        }
+      }
+    }
+  }
+
+  .agree-wrap {
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: var(--gray-color-900);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+
+    .desc {
+      color: var(--gray-color-500);
+      position: relative;
+      top: -0.125rem;
+      margin-left: 1.625rem;
+
+      &::after {
+        content: "\e91f";
+        font-family: "hri_iconset";
+        font-size: 1rem;
+        position: relative;
+        top: 0.125rem;
+        margin-left: 0.125rem;
+      }
+    }
+  }
+
+  .email-sms-checkbox {
+    display: flex;
+    padding: 1.25rem 0 0 1.625rem;
+
+    .checked {
+      &:first-child {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+
+  .btn-edit {
+    width: 100%;
+    justify-content: center;
+    margin-top: 3.5rem;
+  }
+}
+
+/*
+* responsive
+*/
+
+@media (max-width: 1399.98px) {
+}
+
+@media (max-width: 1199.98px) {
+}
+
+@media (max-width: 991.98px) {
+}
+
+@media (max-width: 767.98px) {
+  .myinfo-edit {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+}

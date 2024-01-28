@@ -1,0 +1,104 @@
+//shape translate amount
+$amount: .625rem;
+
+.loader {
+  position: fixed;
+  background-color: rgba(225, 225, 225, 0.4);
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+
+  .loader-bar {
+    position: absolute;
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+    animation: rotation 1s infinite;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+    .shape {
+      position: absolute;
+      width: 1rem;
+      height: 1rem;
+      border-radius: 50%;
+
+      &.shape-1 {
+        left: 0;
+        background-color: var(--primary-color-600);
+      }
+
+      &.shape-2 {
+        right: 0;
+        background-color: var(--primary-color-500);
+      }
+
+      &.shape-3 {
+        bottom: 0;
+        background-color: var(--primary-color-100);
+      }
+
+      &.shape-4 {
+        bottom: 0;
+        right: 0;
+        background-color: var(--primary-color-300);
+      }
+    }
+
+    @for $i from 1 through 4 {
+      .shape-#{$i} {
+        animation: shape#{$i} 0.5s infinite alternate;
+      }
+    }
+  }
+}
+
+@keyframes rotation {
+  from { transform:  rotate(0deg) }
+  to { transform:  rotate(360deg) }
+}
+
+@mixin shapeTranslate($index, $tx, $ty) {
+  @keyframes shape#{$index} {
+    from { transform: translate(0,0) }
+    to { transform: translate($tx, $ty) }
+  }
+}
+
+@include shapeTranslate(1, $amount, $amount);
+@include shapeTranslate(2, -$amount,$amount);
+@include shapeTranslate(3, $amount,-$amount);
+@include shapeTranslate(4, -$amount,-$amount);
+
+/*
+* responsive
+*/
+
+@media (max-width: 1399.98px) {
+}
+
+@media (max-width: 1199.98px) {
+  .loader {
+    .loader-bar {
+      left: 45%;
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+}
+
+@media (max-width: 767.98px) {
+}
+
+@media (max-width: 575.98px) {
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko" data-color-theme="default">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../libs/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../libs/datepicker/datepicker.min.css" />
+    <link rel="stylesheet" href="../../css/styles.css" />
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.png" />
+    <title>HRI</title>
+  </head>
+  <body>
+    <div class="body-wrap fixed">
+      <!-- navbar :: s -->
+      <!-- header :: s -->
+      <header class="header fr1">
+        <div id="headerType1">
+          <div class="header-wrap fluid-wrap">
+            <img src="../../images/img_temp_logo.png" alt="로고 이미지" class="logo-image" />
+            <div class="nav-list">
+              <div class="nav-item">소개</div>
+              <div class="nav-item">리더쉽</div>
+              <div class="nav-item">비지니스</div>
+              <div class="nav-item">이슈트랜드</div>
+              <div class="nav-item">라이프</div>
+              <div class="nav-item">진단</div>
+              <!-- total-menu :: s -->
+              <div class="menu-map">
+                <div class="fluid-wrap">
+                  <div class="sub-menu-wrap">
+                    <ul class="sub-nav">
+                      <li class="tit">소개</li>
+                      <li class="sub-item"><a href="#">소개</a></li>
+                    </ul>
+                    <ul class="sub-nav">
+                      <li class="tit">리더쉽</li>
+                      <li class="sub-item"><a href="#">셀프리더쉽</a></li>
+                      <li class="sub-item"><a href="#">조직리더쉽메뉴명</a></li>
+                      <li class="sub-item"><a href="#">혁신리더쉽</a></li>
+                    </ul>
+                    <ul class="sub-nav">
+                      <li class="tit">비지니스</li>
+                      <li class="sub-item"><a href="#">셀프리더쉽</a></li>
+                      <li class="sub-item"><a href="#">조직리더쉽</a></li>
+                      <li class="sub-item"><a href="#">혁신리더쉽</a></li>
+                    </ul>
+                    <ul class="sub-nav">
+                      <li class="tit">이슈트랜드</li>
+                      <li class="sub-item"><a href="#">셀프리더쉽</a></li>
+                      <li class="sub-item"><a href="#">조직리더쉽</a></li>
+                      <li class="sub-item"><a href="#">혁신리더쉽글씨제한필요</a></li>
+                      <li class="sub-item"><a href="#">혁신리더쉽</a></li>
+                      <li class="sub-item"><a href="#">혁신리더쉽</a></li>
+                    </ul>
+                    <ul class="sub-nav">
+                      <li class="tit">라이프</li>
+                      <li class="sub-item"><a href="#">셀프리더쉽</a></li>
+                      <li class="sub-item"><a href="#">조직리더쉽</a></li>
+                      <li class="sub-item"><a href="#">혁신리더쉽</a></li>
+                    </ul>
+                    <ul class="sub-nav">
+                      <li class="tit">진단</li>
+                      <li class="sub-item"><a href="#">셀프리더쉽</a></li>
+                      <li class="sub-item"><a href="#">조직리더쉽</a></li>
+                      <li class="sub-item"><a href="#">혁신리더쉽</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- total-menu :: e -->
+            </div>
+            <div class="btn-wrap">
+              <button class="btns btn-menu"><i class="icon-menubar"></i></button>
+              <button class="btns btn-search"><i class="icon-search"></i></button>
+              <button class="btns btn-noti new"><i class="icon-bell"></i></button>
+              <div class="profile">
+                <img src="https://picsum.photos/80" alt="profile image" />
+              </div>
+            </div>
+          </div>
+
+          <!-- moile-nav :: s -->
+          <div class="m-nav">
+            <ul class="item-list">
+              <li class="items"><a href="#">소개</a></li>
+              <li class="items"><a href="#">리더쉽</a></li>
+              <li class="items"><a href="#">비지니스</a></li>
+              <li class="items"><a href="#">이슈트랜드</a></li>
+              <li class="items"><a href="#">라이프</a></li>
+              <li class="items"><a href="#">진단</a></li>
+              <li class="items"><a href="#">진단</a></li>
+              <li class="items"><a href="#">진단</a></li>
+              <li class="items"><a href="#">진단</a></li>
+            </ul>
+          </div>
+          <!-- moile-nav :: e -->
+        </div>
+      </header>
+      <!-- header :: e -->
+      <main class="main">
+        <div class="main-wrap">
+          <section></section>
+        </div>
+      </main>
+
+      <!-- footer :: s -->
+      <footer class="footer">
+        <div class="footer-wrap fluid-wrap"></div>
+      </footer>
+      <!-- footer :: e -->
+    </div>
+
+    <!-- import script  -->
+    <script src="../../libs/jquery/jquery-3.6.3.min.js"></script>
+    <script src="../../libs/bootstrap/popper.min.js"></script>
+    <script src="../../libs/jquery/jquery-ui.js"></script>
+    <script src="../../libs/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../../libs/datepicker/datepicker-full.min.js"></script>
+    <script src="../../js/common.js"></script>
+    <script defer>
+      //nav
+      document.querySelectorAll('#headerType1 .nav-item').forEach((item) =>
+        item.addEventListener('mouseenter', (event) => {
+          if (document.querySelector('#headerType1 .menu-map').classList.contains('open')) return;
+          document.querySelector('#headerType1 .menu-map').classList.add('open');
+        })
+      );
+
+      document.querySelector('#headerType1 .nav-list').addEventListener('mouseleave', (event) => {
+        if (!document.querySelector('#headerType1 .menu-map').classList.contains('open')) return;
+        document.querySelector('#headerType1 .menu-map').classList.remove('open');
+      });
+
+      document.querySelector('#headerType1 .btn-menu').addEventListener('click', (event) => {
+        if (document.querySelector('#headerType1 .menu-map').classList.contains('open')) return;
+        document.querySelector('#headerType1 .menu-map').classList.add('open');
+      });
+      // document.querySelector().addEventListener();
+    </script>
+  </body>
+</html>

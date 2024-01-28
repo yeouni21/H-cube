@@ -1,0 +1,161 @@
+#keyword1 {
+  width: 100%;
+  padding: 4.5rem 2rem;
+  background-color: var(--gray-color-900);
+
+  h3 {
+    &:first-of-type {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--white-color);
+    }
+  }
+
+  .desc {
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: var(--gray-color-500);
+    margin-top: 0.75rem;
+    line-height: 1.4;
+  }
+
+  .contents-list {
+    margin-top: 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+
+    .items {
+      flex: auto;
+      text-align: center;
+
+      .keyword {
+        font-size: 1rem;
+        font-weight: 400;
+        color: var(--white-color);
+        border: 1px solid var(--gray-color-800);
+        border-radius: 1.25rem;
+        padding: 0.625rem 1.1875rem;
+
+        &::before {
+          content: '';
+          display: inline-block;
+          width: 1rem;
+          height: 1rem;
+          background: url('../images/main/img_keyword_life.png') center/cover no-repeat;
+          position: relative;
+          top: 0.125rem;
+          margin-right: 0.625rem;
+        }
+
+        &.ad {
+          &::before {
+            background-image: url('../images/main/img_keyword_ad.png');
+          }
+        }
+
+        &.economy {
+          &::before {
+            background-image: url('../images/main/img_keyword_economy.png');
+          }
+        }
+
+        &.stress {
+          &::before {
+            background-image: url('../images/main/img_keyword_stress.png');
+          }
+        }
+
+        &.travel {
+          &::before {
+            background-image: url('../images/main/img_keyword_travel.png');
+          }
+        }
+
+        &.success {
+          &::before {
+            background-image: url('../images/main/img_keyword_success.png');
+          }
+        }
+
+        &.camera {
+          &::before {
+            background-image: url('../images/main/img_keyword_camera.png');
+          }
+        }
+
+        &.mind {
+          &::before {
+            background-image: url('../images/main/img_keyword_mind.png');
+          }
+        }
+
+        &.speech {
+          &::before {
+            background-image: url('../images/main/img_keyword_speech.png');
+          }
+        }
+
+        &.trend {
+          &::before {
+            background-image: url('../images/main/img_keyword_trend.png');
+          }
+        }
+
+        &.passion {
+          &::before {
+            background-image: url('../images/main/img_keyword_passion.png');
+          }
+        }
+      }
+    }
+  }
+}
+
+/*
+* responsive
+*/
+
+@media (max-width: 1399.98px) {
+}
+
+@media (max-width: 1235px) {
+  #keyword1 {
+    .contents-list {
+      .items {
+        flex: initial;
+      }
+    }
+  }
+}
+
+@media (max-width: 1199.98px) {
+}
+
+@media (max-width: 991.98px) {
+}
+
+@media (max-width: 767.98px) {
+  #keyword1 {
+    padding: 2rem 1rem;
+
+    h3 {
+      &:first-of-type {
+        font-size: 1.125rem;
+      }
+    }
+
+    .desc {
+      font-size: 0.75rem;
+      margin-top: 0.5rem;
+    }
+
+    .contents-list {
+      margin-top: 1.5rem;
+      gap: 0.5rem 0.25rem;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+}

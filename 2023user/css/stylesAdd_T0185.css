@@ -1,0 +1,31 @@
+/* T0185 css*/
+@charset "UTF-8";
+/*kps*/
+
+/*myStatus*/
+#myStatus .cont .e-learning::after, #myStatus .cont .microlearning::after {
+    z-index:1;
+}
+#myStatus .status .data-wrap{
+  z-index:10;
+}
+
+#myStatus .cont .stamp a .num{
+font-size: 1.05rem;
+}
+#myStatus .cont .stamp a {
+  margin-top: 8rem;
+}
+#myStatus .cont .microlearning .data .txt {
+  line-height: 54px;
+}
+ 
+@media (max-width: 767.98px) {
+  #myStatus .cont .stamp a {
+    margin-top: 1.5rem;
+  }
+  #myStatus .cont .microlearning .data .txt {
+    line-height:initial;
+  }
+}
+

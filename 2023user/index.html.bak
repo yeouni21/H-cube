@@ -1,0 +1,1793 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+    <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/2023user/map/css/map.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
+    <title>Smart Makers::UI Deploy Site</title>
+    <style></style>
+  </head>
+  <body>
+    <header>
+      <img src="img_logo.png" alt="" style="width: 160px; margin-bottom: 0.5rem" />
+      <h1>UI Dev Deploy Map</h1>
+    </header>
+    <ul class="tab">
+      <li class="tab-item active">산출물Map</li>
+      <li class="tab-item">기본환경</li>
+      <li class="tab-item">네임규칙</li>
+    </ul>
+    <!-- 산출물::s -->
+    <section class="tab-section">
+      <h2>산출물 목록</h2>
+      <article>
+        <!--<h3>파일/폴더 규칙</h3>-->
+        <div class="atc-body">
+          <div class="option">
+            <span class="i"></span>&nbsp; <span class="c"></span>&nbsp; <span class="d"></span>&nbsp; <span class="n"></span>&nbsp;
+            <span class="m"></span>&nbsp; <span class="o"></span>&nbsp;
+          </div>
+          <table class="type-files">
+            <caption>
+              파일구조
+            </caption>
+            <colgroup>
+              <col style="width: 20%" />
+              <col style="width: 76px" />
+              <col style="width: 30%" />
+              <col />
+            </colgroup>
+            <thead>
+              <tr>
+                <th>페이지</th>
+                <th>상태</th>
+                <th>파일명</th>
+                <th>비고</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>임시작업 중</td>
+                <td>
+                  <span class="i"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/layout/component.html" target="_blank">component.html</a>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>아이콘서체 확인</td>
+                <td>
+                  <span class="i"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/layout/icon.html" target="_blank">icon.html</a>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td colspan="4">
+                  <h6>레이아웃</h6>
+                </td>
+              </tr>
+              <tr>
+                <td>메인-샘플</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/layout/main_exam.html" target="_blank">main_exam.html</a>
+                </td>
+                <td>-</td>
+              </tr>
+			  <tr>
+                <td>메인-샘플2</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/layout/main_exam2.html" target="_blank">main_exam2.html</a>
+                </td>
+                <td>2023-10-24</td>
+              </tr>
+              <tr>
+<td>메인-샘플3</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/layout/main_exam3.html" target="_blank">main_exam3.html</a>
+                </td>
+                <td>2023-11-06</td>
+              </tr>
+              <tr>
+                <td>메인-레이아웃</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/layout/main_layout.html" target="_blank">main_layout.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+              <tr>
+                <td>서브-레이아웃 1뎁스(LNB 레이아웃)</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/layout/sub_layout.html" target="_blank">sub_layout.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+
+              <tr>
+                <td>서브-레이아웃 2뎁스</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/layout/sub_layout_2d.html" target="_blank">sub_layout_2d.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+              <tr>
+<td>서브-레이아웃 3뎁스</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/layout/sub_layout_3d.html" target="_blank">sub_layout_3d.html</a>
+                </td>
+                <td>2023-11-08</td>
+              </tr>
+              <tr>
+                <td>공통 페이지네이션</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/layout/pagination.html" target="_blank">pagination.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+              <tr>
+                <td>로딩</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/layout/loading.html" target="_blank">loading.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+
+              <!-- 팝업모달 -->
+              <tr>
+                <td colspan="4">
+                  <h6>팝업모달</h6>
+                </td>
+              </tr>
+              <tr>
+                <td>공통모달</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/layout/common_popup.html" target="_blank">common_popup.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+              <tr>
+                <td>팝업모음</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/popup/popup.html" target="_blank">popup.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+              <tr>
+                <td>필터선택</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/popup/filter.html" target="_blank">filter.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+              <!-- 모듈 :: s -->
+              <tr>
+                <td colspan="4">
+                  <h6>모듈(컴포넌트)</h6>
+                </td>
+              </tr>
+              <tr>
+                <td>헤더영역-type1</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/components/headerType1.html" target="_blank">headerType1.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+              <tr>
+                <td>헤더영역-type2</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/components/headerType2.html" target="_blank">headerType2.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+              <!-- <tr>
+                <td>헤더영역-상단팝업창</td>
+                <td>
+                  <span class="i"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/components/header_noti.html" target="_blank">header_noti.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr> -->
+              <tr>
+                <td>푸터영역-type1</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/components/footerType1.html" target="_blank">footerType1.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+              <tr>
+                <td>푸터영역-type2</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/components/footerType2.html" target="_blank">footerType2.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+              <tr>
+                <td>메인비쥬얼-type1</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/components/mainHero1.html" target="_blank">mainHero1.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+              <tr>
+                <td>메인비쥬얼-type2</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/components/mainHero2.html" target="_blank">mainHero2.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+              <tr>
+                <td>메인비쥬얼-type3</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/components/mainHero3.html" target="_blank">mainHero3.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+			  <tr>
+                <td>메인비쥬얼-type3</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/components/mainHero4.html" target="_blank">mainHero4.html</a>
+                </td>
+                <td>2023-10-24</td>
+              </tr>
+              <tr>
+                <td>나의 현황</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/components/myStatus.html" target="_blank">myStatus.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+			  <tr>
+                <td>나의 현황-type2</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/components/myStatusType2.html" target="_blank">myStatusType2.html</a>
+                </td>
+                <td>2023-10-24</td>
+              </tr>
+			  <tr>
+                <td>나의 현황-type3</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/components/myStatusType3.html" target="_blank">myStatusType3.html</a>
+                </td>
+                <td>2023-10-24</td>
+              </tr>
+              <tr>
+<td>롯데건설 체험관 교육안내</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/components/experience_info.html" target="_blank">experience_info.html</a>
+                </td>
+                <td>2023-11-07</td>
+              </tr>
+              <tr>
+                <td>추천시리즈-type1</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/components/recommand1.html" target="_blank">recommand1.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+              <tr>
+                <td>추천시리즈-type2</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/components/recommand2.html" target="_blank">recommand2.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+			  <tr>
+                <td>추천시리즈-type3</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/components/recommand3.html" target="_blank">recommand3.html</a>
+                </td>
+                <td>2023-10-24</td>
+              </tr>
+              <tr>
+<td>추천시리즈-type4</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/components/recommand4.html" target="_blank">recommand4.html</a>
+                </td>
+                <td>2023-11-06</td>
+              </tr>
+              <tr>
+                <td>큐레이션 서비스-type1</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/components/curation1.html" target="_blank">curation1.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+              <tr>
+                <td>큐레이션 서비스-type2</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/components/curation2.html" target="_blank">curation2.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+              <tr>
+                <td>콘텐츠 플러스-type1</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/components/contentsPlus1.html" target="_blank">contentsPlus1.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+              <tr>
+                <td>콘텐츠 플러스-type2</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/components/contentsPlus2.html" target="_blank">contentsPlus2.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+              <tr>
+                <td>오늘의 키워드-type1</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/components/keyword1.html" target="_blank">keyword1.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+              <tr>
+                <td>오늘의 키워드-type2</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/components/keyword2.html" target="_blank">keyword2.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+			  <tr>
+                <td>오늘의 키워드-type3</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/components/keyword3.html" target="_blank">keyword3.html</a>
+                </td>
+                <td>2023-10-24</td>
+              </tr>
+              <tr>
+                <td>공지사항 & FAQ-type1</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/components/notice1.html" target="_blank">notice1.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+              <tr>
+                <td>공지사항 & FAQ-type2</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/components/notice2.html" target="_blank">notice2.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+              <!-- 수강신청 :: s -->
+              <tr>
+                <td colspan="4">
+                  <h6>수강신청(페이지별 작업)</h6>
+                </td>
+              </tr>
+              <tr>
+                <td>목록(과정형)</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/enrolment/list_course.html" target="_blank">list_course.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+              <tr>
+                <td>목록(과정형)-상세보기</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/enrolment/list_course_detail.html" target="_blank">list_course_detail.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+              <tr>
+                <td>목록(과정형)-상세보기-썸네일,영상표기 없는 과정</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/enrolment/list_course_detail_noneplayer.html" target="_blank">list_course_detail_noneplayer.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+              <tr>
+                <td>목록(채널형)</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/enrolment/list_channel.html" target="_blank">list_channel.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+              <tr>
+                <td>목록(채널형)-상세보기</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/enrolment/list_channel_detail.html" target="_blank">list_channel_detail.html</a>
+                </td>
+                <td>수정 2023-10-30</td>
+              </tr>
+			  <tr>
+                <td>목록(채널형)-상세보기</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/enrolment/list_course_detail_type2.html" target="_blank">list_course_detail_type2.html</a>
+                </td>
+                <td>2023-10-26</td>
+              </tr>
+              <tr>
+                <td>목록(공통)-상세보기-후기 없는 경우</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/enrolment/list_course_detail_empty_review.html" target="_blank">list_course_detail_empty_review.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+              <tr>
+<td>목록(공통)-상세보기-CTV(텍스트 콘텐츠)</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/enrolment/list_course_detail_ctv.html" target="_blank">list_course_detail_ctv.html</a>
+                </td>
+                <td>2023-11-03</td>
+              </tr>
+              <tr>
+                <td>과정1-동의</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/enrolment/process1.html" target="_blank">process1.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+              <tr>
+                <td>과정2-결제</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/enrolment/process2.html" target="_blank">process2.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+              <tr>
+                <td>과정3-교재</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/enrolment/process3.html" target="_blank">process3.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+              <tr>
+                <td>과정4-완료</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/enrolment/process4.html" target="_blank">process4.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+<tr>
+                <td>수강신청정보(새창팝업) & 팝업모음에 레어어팝업</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/enrolment/pop_process.html" target="_blank">pop_process.html</a>
+                </td>
+                <td>2023-11-06</td>
+              </tr>
+<tr>
+                <td>학습현황(새창팝업) & 팝업모음에 레어어팝업</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/enrolment/pop_myStatus.html" target="_blank">pop_myStatus.html</a>
+                </td>
+                <td>2023-11-06</td>
+              </tr>
+<tr>
+                <td>학습현황_type2(새창팝업)</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/enrolment/pop_myStatus2.html" target="_blank">pop_myStatus2.html</a>
+                </td>
+                <td>2023-10-31</td>
+              </tr>
+			  <tr>
+                <td>수강후기(새창팝업) & 팝업모음에 레어어팝업</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/enrolment/pop_review.html" target="_blank">pop_review.html</a>
+                </td>
+                <td>2023-11-06</td>
+              </tr>
+			  <tr>
+                <td>스크립트(새창팝업)</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/enrolment/pop_script.html" target="_blank">pop_script.html</a>
+                </td>
+                <td>2023-10-30</td>
+              </tr>
+			  <tr>
+                <td>팝업모음</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/enrolment/pop.html" target="_blank">pop.html</a>
+                </td>
+                <td>2023-10-30</td>
+              </tr>
+
+              <!-- 일정 :: s  -->
+              <tr>
+                <td colspan="4">
+                  <h6>일정</h6>
+                </td>
+              </tr>
+              <tr>
+                <td>연간교육일정</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/calendar/calendar.html" target="_blank">calendar.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+              <tr>
+                <td>편성표</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/calendar/pairing_list.html" target="_blank">pairing_list.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+
+              <!-- 진단 :: s -->
+              <tr>
+                <td colspan="4">
+                  <h6>진단(페이지별 작업)</h6>
+                </td>
+              </tr>
+              <tr>
+                <td>etest-목록</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/diagnosis/etest_list.html" target="_blank">etest_list.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+              <tr>
+                <td>다면진단-목록</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/diagnosis/multi_list.html" target="_blank">multi_list.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+              <tr>
+                <td>etest-작성</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/diagnosis/etest_detail.html" target="_blank">etest_detail.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+              <tr>
+                <td>etest-결과확인</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/diagnosis/etest_detail_result.html" target="_blank">etest_detail_result.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+              <tr>
+                <td>다면진단-선택지</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/diagnosis/multi_detail.html" target="_blank">multi_detail.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+              <tr>
+                <td>다면진단-진단결과</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/diagnosis/multi_result.html" target="_blank">multi_result.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+
+              <tr>
+                <td>팝업모음</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/diagnosis/diagnosis_popup.html" target="_blank">diagnosis_popup.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+
+              <!-- 통합검색 :: s -->
+              <tr>
+                <td colspan="4">
+                  <h6>통합검색(페이지별 작업)</h6>
+                </td>
+              </tr>
+              <tr>
+                <td>통합검색 - 결과</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/search/search_result.html" target="_blank">search_result.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+              <tr>
+                <td>통합검색 - 결과없음</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/search/search_result_empty.html" target="_blank">search_result_empty.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+              <!-- 마이페이지 :: s -->
+              <tr>
+                <td colspan="4">
+                  <h6>마이페이지(페이지별 작업)</h6>
+                </td>
+              </tr>
+              <tr>
+                <td>학습현황-수강중인 과정</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/mypage/leaning_list1.html" target="_blank">leaning_list1.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+              <tr>
+                <td>학습현황-대기중인 과정</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/mypage/leaning_list2.html" target="_blank">leaning_list2.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+              <tr>
+                <td>학습현황-종료된 과정</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/mypage/leaning_list3.html" target="_blank">leaning_list3.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+              <tr>
+                <td>학습현황-신청정보(팝업)</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/enrolment/pop_process.html" target="_blank">pop_process.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+              <tr>
+                <td>담은 콘텐츠_시리즈</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/mypage/wish_contents_series.html" target="_blank">wish_contents_series.html</a>
+                </td>
+                <td>2023-11-03</td>
+              </tr>
+			  <tr>
+                <td>담은 콘텐츠_콘텐츠</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/mypage/wish_contents.html" target="_blank">wish_contents.html</a>
+                </td>
+                <td>2023-11-03</td>
+              </tr>
+              <tr>
+                <td>AI맞춤과정-공통 폼</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/mypage/favorite-list.html" target="_blank">favorite-list.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+              <tr>
+                <td>리워드 - 학습스탬프</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/mypage/reward.html" target="_blank">reward.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+              <tr>
+                <td>활동내역 - 나의수강 후기</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/mypage/learning_reviews.html" target="_blank">learning_reviews.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+<tr>
+                <td>활동내역 - 나의수강 후기 type2</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/mypage/learning_reviews_type2.html" target="_blank">learning_reviews_type2.html</a>
+                </td>
+                <td>2023-11-03</td>
+              </tr>
+			  <tr>
+                <td>[팝업] 모든 수강후기 – 더보기  & 팝업모음에 레어어팝업</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/mypage/pop_reviews_more.html" target="_blank">pop_reviews_more.html</a>
+                </td>
+                <td>2023-11-06</td>
+              </tr>
+              <tr>
+                <td>활동내역 - 나의수강 후기(후기 없는 경우)</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/mypage/learning_reviews_empty.html" target="_blank">learning_reviews_empty.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+              <tr>
+                <td>활동내역 - 학습상담하기1</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/mypage/learning_consulting1.html" target="_blank">learning_consulting1.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+              <tr>
+                <td>활동내역 - 학습상담하기2 글보기</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/mypage/learning_consulting2.html" target="_blank">learning_consulting2.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+              <tr>
+                <td>활동내역 - 학습상담하기3 글작성</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/mypage/learning_consulting3.html" target="_blank">learning_consulting3.html</a>
+                </td>
+                <td>수정 2023-10-13</td>
+              </tr>
+              <tr>
+                <td>결제내역</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/mypage/payment_list.html" target="_blank">payment_list.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+              <tr>
+                <td>지식컨텐츠</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/mypage/knowledge_list.html" target="_blank">knowledge_list.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+              <tr>
+                <td>정보변경</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/mypage/my_info_edit.html" target="_blank">my_info_edit.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+              <tr>
+                <td>알람</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/mypage/my_notification.html" target="_blank">my_notification.html</a>
+                </td>
+                <td>수정 2023-10-26</td>
+              </tr>
+<tr>
+                <td>팝업모음</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/mypage/pop.html" target="_blank">pop.html</a>
+                </td>
+                <td>2023-11-06</td>
+              </tr>
+                <!-- 도서배송 :: s -->
+                <tr>
+                  <td colspan="4">
+                    <h6>도서배송(페이지별 작업)</h6>
+                  </td>
+                </tr>
+          <tr>
+                  <td>도서배송</td>
+                  <td>
+                    <span class="c"></span>
+                  </td>
+                  <td>
+                    <a href="/assets/2023user/html/cs/book_delivery.html" target="_blank">book_delivery.html</a>
+                  </td>
+                  <td>2023-10-13</td>
+                </tr>
+          <tr>
+                  <td>팝업모음</td>
+                  <td>
+                    <span class="c"></span>
+                  </td>
+                  <td>
+                    <a href="/assets/2023user/html/cs/book_delivery_popup.html" target="_blank">book_delivery_popup.html</a>
+                  </td>
+                  <td>2023-10-13</td>
+                </tr>
+  
+              <!-- 고객센터 :: s -->
+              <tr>
+                <td colspan="4">
+                  <h6>고객센터(페이지별 작업)</h6>
+                </td>
+              </tr>
+              <tr>
+                <td>공지사항1</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/cs/notice1.html" target="_blank">notice1.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+              <tr>
+                <td>공지사항2-글보기</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/cs/notice2.html" target="_blank">notice2.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+              <tr>
+                <td>공지사항3-글작성</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/cs/notice3.html" target="_blank">notice3.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+              <tr>
+                <td>이벤트1</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/cs/event1.html" target="_blank">event1.html</a>
+                </td>
+                <td>2023-10-13</td>
+              </tr>
+              <tr>
+                <td>이벤트2-글보기</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/cs/event2.html" target="_blank">event2.html</a>
+                </td>
+                <td>2023-10-13</td>
+              </tr>
+              <tr>
+                <td>이벤트3-글작성</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/cs/event3.html" target="_blank">event3.html</a>
+                </td>
+                <td>2023-10-13</td>
+              </tr>
+              <tr>
+                <td>FAQ</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/cs/FAQ.html" target="_blank">FAQ.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+              <tr>
+                <td>나의 1:1 상담1</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/cs/myconsulting1.html" target="_blank">myconsulting1.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+              <tr>
+                <td>나의 1:1 상담2-글보기</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/cs/myconsulting2.html" target="_blank">myconsulting2.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+              <tr>
+                <td>나의 1:1 상담3-글작성</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/cs/myconsulting3.html" target="_blank">myconsulting3.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+              <tr>
+                <td>학습가이드</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/cs/guide_learning.html" target="_blank">guide_learning.html</a>
+                </td>
+                <td>2023-10-13</td>
+              </tr> 
+			  <tr>
+                <td>과정 수요조사1</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/cs/research1.html" target="_blank">research1.html</a>
+                </td>
+                <td>2023-10-13</td>
+              </tr>
+              <tr>
+                <td>과정 수요조사2-글보기</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/cs/research2.html" target="_blank">research2.html</a>
+                </td>
+                <td>2023-10-13</td>
+              </tr>
+              <tr>
+                <td>과정 수요조사3-글작성</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/cs/research3.html" target="_blank">research3.html</a>
+                </td>
+                <td>2023-10-13</td>
+              </tr>
+			  <tr>
+                <td>전화상담예약</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/cs/counseling_tel.html" target="_blank">counseling_tel.html</a>
+                </td>
+                <td>2023-10-13</td>
+              </tr> 
+			 
+
+              <!-- 회원 :: s -->
+              <tr>
+                <td colspan="4">
+                  <h6>회원(페이지별 작업)</h6>
+                </td>
+              </tr>
+              <tr>
+                <td>폐쇄형 로그인-type1</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/member/login_closing.html" target="_blank">login_closing.html</a>
+                </td>
+                <td>23.09.13</td>
+              </tr>
+              <tr>
+                <td>폐쇄형 로그인-type2</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/member/login_closing_style2.html" target="_blank">login_closing_style2.html</a>
+                </td>
+                <td>23.10.06</td>
+              </tr>
+			   <tr>
+                <td>폐쇄형 로그인-type3</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/member/login_closing_style3.html" target="_blank">login_closing_style3.html</a>
+                </td>
+                <td>23.10.25</td>
+              </tr>
+              <tr>
+                <td>이용약관</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/member/join_terms.html" target="_blank">join_terms.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+              <tr>
+                <td>로그인</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/member/login.html" target="_blank">login.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+              <tr>
+                <td>아이디찾기</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/member/login_find_id.html" target="_blank">login_find_id.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+              <tr>
+                <td>패스워드찾기</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/member/login_find_pw.html" target="_blank">login_find_pw.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+              <tr>
+                <td>회원가입1-정보동의</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/member/join1.html" target="_blank">join1.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+              <tr>
+                <td>회원가입2-본인인증</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/member/join2.html" target="_blank">join2.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+              <tr>
+                <td>회원가입3-본인인증</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/member/join3.html" target="_blank">join3.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+              <tr>
+                <td>회원가입4-가입완료</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/member/join4.html" target="_blank">join4.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+              <tr>
+                <td>개인정보 수정</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/member/change_info.html" target="_blank">change_info.html</a>
+                </td>
+                <td>2023-10-26</td>
+              </tr>
+			         <tr>
+                <td>비밀번호 변경</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/member/change_pw.html" target="_blank">change_pw.html</a>
+                </td>
+                <td>2023-10-25</td>
+              </tr>
+              <tr>
+                <td>팝업모음</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/member/member_popup.html" target="_blank">member_popup.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+
+              <!-- 시스템안내 :: s -->
+              <tr>
+                <td colspan="4">
+                  <h6>시스템안내(페이지별 작업)</h6>
+                </td>
+              </tr>
+              <tr>
+                <td>시스템안내 404</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/systemGuide/error_404.html" target="_blank">error_404.htmll</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+              <tr>
+                <td>시스템안내 504</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/systemGuide/error_504.html" target="_blank">error_504.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+              <tr>
+                <td>서비스기간 만료</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/systemGuide/error_finish.html" target="_blank">error_finish.html</a>
+                </td>
+                <td>2023-10-13</td>
+              </tr>
+			  <tr>
+                <td>휴면 계정 해제 안내</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/systemGuide/error_dormant_account.html" target="_blank">error_dormant_account.html</a>
+                </td>
+                <td>2023-10-13</td>
+              </tr>
+              <tr>
+                <td>이메일</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/systemGuide/mailing.html" target="_blank">mailing.html</a>
+                </td>
+                <td>최초작성</td>
+              </tr>
+
+			  <!-- 사이버 연수원 :: s -->
+              <tr>
+                <td colspan="4">
+                  <h6>사이버 연수원</h6>
+                </td>
+              </tr>
+			  <tr>
+                <td>운영계획</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/cyberTraining/operating_plan.html" target="_blank">operating_plan.html</a>
+                </td>
+                <td>2023-10-25</td>
+              </tr>
+			  <tr>
+                <td>운영지침</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/cyberTraining/operation_guideline.html" target="_blank">operation_guideline.html</a>
+                </td>
+                <td>2023-10-25</td>
+              </tr>
+			  <tr>
+                <td>직원안내</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/cyberTraining/employee.html" target="_blank">employee.html</a>
+                </td>
+                <td>2023-10-25</td>
+              </tr>
+<tr>
+                <td>학습지원도구</td>
+                <td>
+                  <span class="c"></span>
+                </td>
+                <td>
+                  <a href="/assets/2023user/html/cyberTraining/tool.html" target="_blank">tool.html</a>
+                </td>
+                <td>2023-10-30</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+    </section>
+    <!-- 산출물::e-->
+
+    <!-- 기본환경::s -->
+    <section class="tab-section">
+      <h2>기본환경</h2>
+      <article class="env">
+        <h3>프로젝트 환경</h3>
+        <div class="atc-body">
+          <table>
+            <caption>
+              환경정의
+            </caption>
+            <colgroup>
+              <col style="width: 20%" />
+              <col />
+            </colgroup>
+            <tbody>
+              <tr>
+                <th scope="row">문서 및 버전</th>
+                <td>HTML5, CSS3</td>
+              </tr>
+              <tr>
+                <th scope="row">인코딩</th>
+                <td>UTF-8</td>
+              </tr>
+              <tr>
+                <th scope="row">웹 유형</th>
+                <td>반응형 웹</td>
+              </tr>
+              <tr>
+                <th scope="row">PC 웹 호환성</th>
+                <td>Edge, Chrome, Firefox, Sapfari</td>
+              </tr>
+              <tr>
+                <th scope="row">Mobile 웹 호환성</th>
+                <td>Sapfari, Chrome, Samsung</td>
+              </tr>
+              <tr>
+                <th scope="row">해상도 정책</th>
+                <td>
+                  PC UI : 1024 ~<br />
+                  MO UI : ~ 1023 <br />
+                  각 디바이스별 구간에서 반응형 처리
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+
+      <article>
+        <h3>파일/폴더 규칙</h3>
+        <div class="atc-body">
+          <div class="option">
+            <p>분류폴더 위치: ~/assets/</p>
+            <p class="color-caution">해당 컬러 폴더/파일은 퍼블리싱용 파일, 개발 적용 시 불필요</p>
+          </div>
+          <table>
+            <caption>
+              파일구조
+            </caption>
+            <colgroup>
+              <col style="width: 20%" />
+              <col style="width: 20%" />
+              <col style="width: 30%" />
+              <col />
+            </colgroup>
+            <thead>
+              <tr>
+                <th>분류 폴더</th>
+                <th>서브 폴더</th>
+                <th>파일 이름</th>
+                <th>파일 설명</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>css</td>
+                <td></td>
+                <td>
+                  reset.css<br />
+                  styles.css<br />
+                  <span class="color-caution">styles.css.map</span>
+                </td>
+                <td>
+                  스타일 - 초기화<br />
+                  스타일 - 전체<br />
+                  <span class="color-caution">css<->scss 매핑파일</span>
+                </td>
+              </tr>
+              <tr>
+                <td>fonts</td>
+                <td></td>
+                <td></td>
+                <td>웹폰트</td>
+              </tr>
+              <tr>
+                <td>js</td>
+                <td></td>
+                <td>
+                  ui.common.js<br />
+                  ui.components.js
+                </td>
+                <td>
+                  스크립트 - UI 공통<br />
+                  스크립트 - UI 컴포넌트<br />
+                </td>
+              </tr>
+              <tr>
+                <td>libs</td>
+                <td>[...libs]</td>
+                <td></td>
+                <td>폴더별 라이브러리</td>
+              </tr>
+              <tr>
+                <td>images</td>
+                <td>
+                  common<br />
+                  main<br />
+                  <span class="color-caution">temp</span><br />
+                  [...menus]
+                </td>
+                <td></td>
+                <td>
+                  이미지 - 공통<br />
+                  이미지 - 메인<br />
+                  <span class="color-caution">이미지 - 샘플</span><br />
+                  이미지 - 메뉴별
+                </td>
+              </tr>
+              <tr>
+                <td>pages</td>
+                <td>
+                  layout<br />
+                  [...menus]
+                </td>
+                <td></td>
+                <td>
+                  공통페이지<br />
+                  메뉴페이지
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="color-caution">scss</span>
+                </td>
+                <td>
+                  <span class="color-caution">_parts</span>
+                </td>
+                <td>
+                  <span class="color-caution">styles.scss</span>
+                </td>
+                <td>
+                  <span class="color-caution">scss/sass</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+    </section>
+    <!-- 기본환경::e -->
+
+    <!-- 네임규칙::s -->
+    <section class="tab-section">
+      <h2>네임규칙</h2>
+      <article>
+        <h3>공통 규칙</h3>
+        <div class="atc-body">
+          <h5>표기법</h5>
+          <table class="type1">
+            <caption>
+              표기법
+            </caption>
+            <colgroup>
+              <col style="width: 18%" />
+              <col style="width: 25%" />
+              <col style="width: 25%" />
+              <col />
+            </colgroup>
+            <thead>
+              <tr>
+                <th>종류</th>
+                <th>구분</th>
+                <th>번호</th>
+                <th>예시</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>ID Selector</td>
+                <td>카멜표기법 (camelCase)</td>
+                <td>한 자리수 (생략가능, 2, 3)</td>
+                <td>errorMessage, controlCenter, controlCenter2</td>
+              </tr>
+              <tr>
+                <td>Class Selector</td>
+                <td>케밥표기법 (kebab-case)</td>
+                <td>한 자리수 (생략가능, 2, 3)</td>
+                <td>tab-page, tbl-type1, tbl-type2</td>
+              </tr>
+              <tr>
+                <td>Image</td>
+                <td>스네이크표기법 (snake_case)</td>
+                <td>두 자리수 (01, 02, 03)</td>
+                <td>btn_cancle01_off.gif</td>
+              </tr>
+              <tr>
+                <td>파일 및 폴더</td>
+                <td>스네이크표기법 (snake_case)</td>
+                <td>두 자리수 (01, 02, 03)</td>
+                <td>board_list.html</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="atc-body">
+          <h5>이미지 네이밍 규칙</h5>
+          <table>
+            <caption>
+              이미지 예약어
+            </caption>
+            <colgroup>
+              <col span="2" style="width: 25%" />
+              <col />
+            </colgroup>
+            <thead>
+              <tr>
+                <th>분류</th>
+                <th>파일명</th>
+                <th>비고</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>아이콘</td>
+                <td>ico_</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>블릿</td>
+                <td>bul_</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>썸네일</td>
+                <td>thumb_</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>배경</td>
+                <td>bg_</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>일반</td>
+                <td>img_</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>임시</td>
+                <td>@</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="atc-body">
+          <h5>사용 라이브러리/플러그인</h5>
+          <table>
+            <caption>
+              라이브러리 및 플러그인
+            </caption>
+            <colgroup>
+              <col style="width: 20%" />
+              <col style="width: 80px" />
+              <col />
+            </colgroup>
+            <thead>
+              <tr style="text-align: left">
+                <th>라이브러리명</th>
+                <th>버전</th>
+                <th>링크</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Bootstrap</td>
+                <td>5.3</td>
+                <td><a href="https://getbootstrap.com/" target="_blank">https://getbootstrap.com/</a></td>
+              </tr>
+              <tr>
+                <td>Chartjs</td>
+                <td>4.1.2</td>
+                <td><a href="https://www.chartjs.org/" target="_blank">https://www.chartjs.org/</a></td>
+              </tr>
+              <tr>
+                <td>gauge.js</td>
+                <td>1.3.7</td>
+                <td><a href="https://github.com/bernii/gauge.js" target="_blank">https://github.com/bernii/gauge.js</a></td>
+              </tr>
+              <tr>
+                <td>Vanilla JS Datepicker</td>
+                <td>1.0.0</td>
+                <td><a href="https://github.com/mymth/vanillajs-datepicker/" target="_blank">https://github.com/mymth/vanillajs-datepicker/</a></td>
+              </tr>
+              <tr>
+                <td>jqueryui</td>
+                <td>1.13.2</td>
+                <td><a href="https://jqueryui.com/" target="_blank">https://jqueryui.com/</a></td>
+              </tr>
+              <tr>
+                <td>dropzone</td>
+                <td>5.7.3</td>
+                <td><a href="https://www.dropzone.dev/" target="_blank">https://www.dropzone.dev/</a></td>
+              </tr>
+              <tr>
+                <td>Viewer.js</td>
+                <td>1.11.2</td>
+                <td><a href="https://fengyuanchen.github.io/viewerjs/" target="_blank">https://fengyuanchen.github.io/viewerjs/</a></td>
+              </tr>
+              <tr>
+                <td>Tom Select</td>
+                <td>2.2.2</td>
+                <td><a href="https://tom-select.js.org/" target="_blank">https://tom-select.js.org/</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+    </section>
+    <!-- 네임규칙::e -->
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const tabItems = document.querySelectorAll('.tab > li');
+        const tabSections = document.querySelectorAll('section.tab-section');
+        onOpenSection();
+
+        tabItems.forEach((item, index) => {
+          item.addEventListener('click', onTabsClick);
+        });
+
+        function onTabsClick(e) {
+          tabItems.forEach((item) => item.classList.remove('active'));
+          e.target.classList.add('active');
+          onOpenSection();
+        }
+
+        function onOpenSection() {
+          tabItems.forEach((item, index) => {
+            item.classList.contains('active') ? (tabSections[index].style.display = 'block') : (tabSections[index].style.display = 'none');
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

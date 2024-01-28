@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko" data-color-theme="default">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../libs/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../libs/datepicker/datepicker.min.css" />
+    <link rel="stylesheet" href="../../libs/dropzone/dropzone.min.css" />
+    <link rel="stylesheet" href="../../libs/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../../css/styles.css" />
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.png" />
+	<script defer src="../../libs/jquery/jquery-3.6.3.min.js"></script>
+	<script defer src="../../libs/jquery/jquery-ui.js"></script>
+	<script defer src="../../libs/swiper/swiper-bundle.min.js"></script>
+
+    <title>HRI</title>
+  </head>
+  <body>
+    <div class="body-wrap">
+
+	
+	<!-- 메인 롤링 팝업 -->
+	<div class="main_swiper_pop">
+		<div class="swiper">
+			<ul class="swiper-wrapper">
+				<li class="items swiper-slide"><img src="../../images/main/img_pop_1.jpg"></li>
+				<li class="items swiper-slide"><img src="https://cdn.hitnews.co.kr/news/photo/202304/44688_57234_517.png"></li>
+			</ul>
+			<div class="swiper-pagination"></div>
+		</div>
+		<div class="btn_wrap">
+			<button>오늘은 그만 보기</button>
+			<button>닫기</button>
+		</div>
+	</div>
+	<script defer>
+	document.addEventListener('DOMContentLoaded', () => {
+	  
+	  if($(".main_swiper_pop .swiper-slide").length > 1) {
+		  const createSwiperPop = new Swiper('.main_swiper_pop .swiper', {
+			loop : true,
+			autoHeight : true,
+			slidesPerView : 1,
+			spaceBetween: 0,
+			pagination: {
+			  el: '.main_swiper_pop .swiper-pagination',
+			  type: "fraction",
+			  clickable: true,
+			},
+		  });
+		  $(".swiper-pagination").fadeIn(0);
+	  }
+	  $( ".main_swiper_pop" ).draggable();
+	});
+  </script>
+	<!-- /메인 롤링 팝업 -->
+
+
+  </body>
+</html>

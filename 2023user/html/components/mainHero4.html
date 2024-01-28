@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko" data-color-theme="default">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../libs/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../libs/datepicker/datepicker.min.css" />
+    <link rel="stylesheet" href="../../libs/dropzone/dropzone.min.css" />
+    <link rel="stylesheet" href="../../libs/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../../css/styles.css" />
+    <!-- import script -->
+    <script defer src="../../libs/jquery/jquery-3.6.3.min.js"></script>
+    <script defer src="../../libs/bootstrap/bootstrap.bundle.min.js"></script>
+    <script defer src="../../libs/bootstrap/popper.min.js"></script>
+    <script defer src="../../libs/jquery/jquery-ui.js"></script>
+    <script defer src="../../libs/datepicker/datepicker-full.min.js"></script>
+    <script defer src="../../libs/dropzone/dropzone.min.js"></script>
+    <script defer src="../../libs/swiper/swiper-bundle.min.js"></script>
+    <script defer src="../../js/common.js"></script>
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.png" />
+    <title>HRI</title>
+  </head>
+  <body>
+    <div class="body-wrap">
+      <!-- mainHero4 :: s -->
+      <div id="mainHero4">
+        <div class="main-content swiper">
+          <ul class="contents-list swiper-wrapper">
+            
+			<li class="items swiper-slide" style="background-color:#FFD37D">
+				<div class="txt-wrap">
+					<dl>
+						<dt>울산광역시 e 인재개발원 입니다.</dt>
+						<dd>울산광역시 사이버연수원에 오신걸 환영합니다.</dd>
+					</dl>
+					<img src="../../images/main/@main_visual.png" alt="">
+				</div>
+            </li>
+			<li class="items swiper-slide" style="background-color:#ddd">
+				<div class="txt-wrap">
+					<dl>
+						<dt>울산광역시 e 인재개발원 입니다.</dt>
+						<dd>링크가 필요한 컨텐츠의 경우입니다.</dd>
+						<dd><a href="">자세히 보기</a></dd>
+					</dl>
+					<img src="../../images/main/@main_visual.png" alt="">
+				</div>
+            </li>
+			<li class="items swiper-slide">
+			  <div class="img-wrap">
+				<img src="../../images/main/@main_visual.jpg" alt="">
+				<p><img src="../../images/main/@main_visual_mobile.jpg" alt=""></p>
+			  </div>
+			</li>
+
+          </ul>
+          <div class="swiper-option">
+            <div class="swiper-pagination"></div>
+            <div class="swiper-btn-wrap">
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script defer>
+        document.addEventListener('DOMContentLoaded', () => {
+          const createSwiperMainHero2 = new Swiper('#mainHero4 .main-content', {
+            loop : true,
+			autoHeight : true,
+            slidesPerView : 1,
+            spaceBetween: 0,
+            pagination: {
+              el: '#mainHero4 .swiper-pagination',
+              clickable: true,
+            },
+            navigation: {
+              nextEl: '#mainHero4 .swiper-button-next',
+              prevEl: '#mainHero4 .swiper-button-prev',
+            },
+            // breakpoints: {
+            //   768: {
+            //     spaceBetween: 30,
+            //   },
+            // },
+          });
+		  if($("#mainHero4 .swiper-slide").length > 1) {
+			  $(".swiper-option").fadeIn(0);
+		  }
+		  
+        });
+      </script>
+      <!-- mainHero4 :: e -->
+    </div>
+  </body>
+</html>

@@ -1,0 +1,112 @@
+.my-notification {
+  .noti-head-wrap {
+    display: flex;
+    justify-content: flex-end;
+
+    &>.search-wrap {
+      margin-right: 0.5rem;
+    }
+
+    &>.noti-toolbar {
+      .btn-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 0.5rem;
+      }
+    }
+  }
+
+  .noti-cont-wrap {
+    margin-top: 1.5rem;
+
+    ul {
+      .noti-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5rem 1.875rem 1.25rem;
+        border-top: 1px solid var(--gray-color-300);
+
+        &:last-child {
+          border-bottom: 1px solid var(--gray-color-300);
+        }
+        
+        .txt-wrap {
+          flex: 1;
+          overflow: hidden;
+          margin-right: 2rem;
+
+          .title {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--gray-color-900);
+            @include text-overflow;
+          }
+
+          .desc {
+            font-size: 1rem;
+            font-weight: 400;
+            color: var(--gray-color-500);
+            @include text-overflow;
+            margin-top: 0.75rem;
+          }
+        }
+
+        .time {
+          flex: none;
+          font-size: 0.875rem;
+          font-weight: 400;
+          color: var(--gray-color-800);
+        }
+      }
+    }
+  }
+
+  .paging-wrap {
+    margin-top: 2rem;
+  }
+}
+
+/*
+* responsive
+*/
+
+@media (max-width: 1399.98px) {
+}
+
+@media (max-width: 1199.98px) {
+}
+
+@media (max-width: 991.98px) {
+}
+
+@media (max-width: 767.98px) {
+  .my-notification {
+    .noti-head-wrap {
+      display: block;
+
+      &>.search-wrap {
+        margin: 0 0 1rem 0;
+        max-width: 100%;
+      }
+    }
+
+    .noti-cont-wrap {
+      ul {
+        .noti-list {
+          display: block;
+          padding: 1.5rem 1rem 1.25rem;
+
+          .txt-wrap {
+            margin-bottom: 0.625rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+}

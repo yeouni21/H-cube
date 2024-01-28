@@ -1,0 +1,76 @@
+@import url('../fonts/pretendard.css');
+@import url('../fonts/hri_iconset.css');
+
+$primary-font: "Pretendard", -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+
+$header-fr1-height: 5rem;
+$header-m-height: 6.25rem;
+$header-fr2-height: 9.25rem;
+$footer-height: 5rem;
+/*
+root var
+*/
+:root {
+  --default-spacing: 2rem;
+}
+
+
+:root,
+html[data-color-theme="default"] {
+  --primary-color-25: #F5FAFF;
+  --primary-color-50: #EFF8FF;
+  --primary-color-100: #D1E9FF;
+  --primary-color-200: #B2DDFF;
+  --primary-color-300: #84CAFF;
+  --primary-color-400: #53B1FD;
+  --primary-color-500: #2E90FA;
+  --primary-color-600: #1570EF;
+  --primary-color-700: #175CD3;
+  --primary-color-800: #1849A9;
+  --primary-color-900: #194185;
+
+  --secondary-color-25: #F2FDFF;
+  --secondary-color-50: #EAFBFF;
+  --secondary-color-100: #BBECF8;
+  --secondary-color-200: #A4E7F8;
+  --secondary-color-300: #86D9EA;
+  --secondary-color-400: #56D0E9;
+  --secondary-color-500: #2ABFE8;
+  --secondary-color-600: #1EB0D9;
+  --secondary-color-700: #129EC5;
+  --secondary-color-800: #0B92B8;
+  --secondary-color-900: #007292;
+
+  --gray-color-25: #FCFDFD;
+  --gray-color-50: #F9F9F9;
+  --gray-color-100: #F4F4F4;
+  --gray-color-200: #EEEEEE;
+  --gray-color-300: #DEDFDF;
+  --gray-color-400: #B7B7B7;
+  --gray-color-500: #878787;
+  --gray-color-600: #676767;
+  --gray-color-700: #575757;
+  --gray-color-800: #373737;
+  --gray-color-900: #171717;
+
+  --white-color: #ffffff;
+  --black-color: #000000;
+
+  --error-color-25: #FFFBFA;
+  --error-color-50: #FEF3F2;
+  --error-color-400: #FA7066;
+  --error-color-500: #F04438;
+
+  --warning-color-25: #FFFCF5;
+  --warning-color-50: #FFFAEB;
+  --warning-color-400: #FDB022;
+  --warning-color-500: #F79009;
+
+  --success-color-25: #F6FEF9;
+  --success-color-50: #ECFDF3;
+  --success-color-400: #32D583;
+  --success-color-500: #12B76A;
+
+  --bs-font-sans-serif: $primary-font;
+  --bs-body-line-height: 1;
+}

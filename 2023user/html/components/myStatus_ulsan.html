@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko" data-color-theme="default">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../libs/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../libs/datepicker/datepicker.min.css" />
+    <link rel="stylesheet" href="../../libs/dropzone/dropzone.min.css" />
+    <link rel="stylesheet" href="../../libs/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../../css/styles.css" />
+    <!-- import script -->
+    <script defer src="../../libs/jquery/jquery-3.6.3.min.js"></script>
+    <script defer src="../../libs/bootstrap/bootstrap.bundle.min.js"></script>
+    <script defer src="../../libs/bootstrap/popper.min.js"></script>
+    <script defer src="../../libs/jquery/jquery-ui.js"></script>
+    <script defer src="../../libs/datepicker/datepicker-full.min.js"></script>
+    <script defer src="../../libs/dropzone/dropzone.min.js"></script>
+    <script defer src="../../libs/swiper/swiper-bundle.min.js"></script>
+    <script defer src="../../js/common.js"></script>
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.png" />
+    <title>HRI</title>
+    <style>
+        
+
+/* #myStatusType2 .cont .stamp a {
+    margin-top: 8rem;
+} */
+#myStatusType2 .cont .credit a, #myStatusType2 .cont .stamp a {
+    background-color: var(--gray-color-50);
+    border: 1px solid #eee;
+    border-radius: 1rem;
+    margin-top: 8rem;
+    position: relative;
+    padding: 2rem 3rem 2rem 7rem;
+    display: block;
+}
+
+#myStatusType2 .cont .stamp a .myrecent {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #194185;
+} 
+    </style>
+  </head>
+  <body>
+    <div class="body-wrap">
+      <!-- 나의 현황 :: s -->
+      <div id="myStatusType2">
+        <div class="main-contents-wrap">
+          <div class="contents-wrap">
+            <div class="cont">
+              <div class="greeting">
+                <p class="user"><span class="name">스마트</span>님,</p>
+                <p>학습현황을 확인하세요! </p>
+              </div>
+              <!-- <div class="credit">
+                <a href="#">
+                  <div class="title">나의 학점</div>
+                  <div class="num">30</div>
+                </a>
+              </div> -->
+              <div class="stamp">
+                <a href="#">
+                  <div class="title">수강신청기간</div>
+                  <div class="num"><small>매월 1일~28일</small></div>
+                 
+                </a>
+              </div>
+            </div>
+            <div class="cont">
+              <div class="e-learning">
+                <div class="title">이러닝</div>
+                <a href="#"><div class="myrecent">나의 학습현황</div></a>
+                <div class="status">
+                  <div class="data-wrap">
+                    <div class="data"><span class="txt">대기중</span><span class="num">62</span></div>
+                    <div class="data"><span class="txt">학습중</span><span class="num">100</span></div>
+                    <div class="data"><span class="txt">학습종료</span><span class="num">99999999</span></div>
+                  </div>
+                  <!-- <div class="compare down">
+                    <div class="data"><span class="num">40</span>%</div>
+                    <div class="txt">지난달 대비 (학습중)</div>
+                  </div> -->
+                </div>
+              </div>
+			  <div class="rows">
+				  <div class="">
+					<div class="title">마이크로러닝</div>
+					<a href="#"><div class="myrecent">나의 학습현황</div></a>
+					<div class="status">
+					  <div class="data-wrap">
+						<div class="data"><span class="txt">학습완료</span><span class="num">15</span></div>
+					  </div>
+					</div>
+				  </div>
+				   <div class="">
+					<div class="title">법정 필수<br />이수 현황</div>
+					<div class="status">
+					  <div class="data-wrap">
+						<div class="data"><span class="txt">수료 교육</span><span class="num">318</span></div>
+					  </div>
+					</div>
+				  </div>
+			  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 나의 현황 :: e -->
+    </div>
+  </body>
+</html>

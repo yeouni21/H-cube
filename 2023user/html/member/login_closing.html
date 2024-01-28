@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko" data-color-theme="default">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../libs/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../../libs/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../libs/datepicker/datepicker.min.css" />
+    <link rel="stylesheet" href="../../libs/dropzone/dropzone.min.css" />
+    <link rel="stylesheet" href="../../libs/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../../libs/tomselect/tom-select.css" />
+    <link rel="stylesheet" href="../../css/styles.css" />
+    <!-- import script -->
+    <script defer src="../../libs/jquery/jquery-3.6.3.min.js"></script>
+    <script defer src="../../libs/bootstrap/bootstrap.bundle.min.js"></script>
+    <script defer src="../../libs/bootstrap/popper.min.js"></script>
+    <script defer src="../../libs/jquery/jquery-ui.js"></script>
+    <script defer src="../../libs/datepicker/datepicker-full.min.js"></script>
+    <script defer src="../../libs/dropzone/dropzone.min.js"></script>
+    <script defer src="../../libs/swiper/swiper-bundle.min.js"></script>
+    <script defer src="../../libs/tomselect/tom-select.complete.min.js"></script>
+    <script defer src="../../js/common.js"></script>
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.png" />
+    <title>HRI</title>
+  </head>
+  <body>
+    <div class="body-wrap fixed" id="loginClosing">
+      <!-- navbar :: s -->
+      <main class="main">
+        <div class="main-wrap">
+          <div class="sub-contents fluid-wrap loginpage">
+            <!-- contents here :: s -->
+            <div class="contents-wrap memberpage">
+              <section>
+                <div class="login">
+                  <h3><img src="../../images/img_temp_logo.png" alt="로고 이미지" class="logo-image"></h3>
+                  <form method="" action="" id="">
+                    <div class="row">
+                      <div class="col">
+                        <div class="txt">아이디</div>
+                        <!-- validation check -->
+                        <!-- 에러시 input태그에 is-invalid 클래스 할당 -->
+                        <div class="inputbox-underline">
+                          <input type="text" name="" placeholder="아이디를 입력해 주세요" id="validationId" class="is-invalid">
+                          <div id="validationId" class="invalid-feedback">아이디를 다시 입력해주세요.</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row pw">
+                      <div class="col">
+                        <div class="txt">패스워드</div>
+                        <div class="inputbox-underline">
+                          <input type="password" name="" placeholder="패스워드를 입력해 주세요" id="validationPw">
+                          <button type="button" class="btn-show"><i class="icon-eye-off"></i></button>
+                          <div id="validationPw" class="invalid-feedback">패스워드를 다시 입력해주세요.</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col">
+                        <div class="checked">
+                          <label class="checkbox-wrap">
+                            <input type="checkbox" name="" />
+                            <span class="label-checkbox"></span>
+                            아이디 기억하기
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="btn-wrap">
+                      <button type="button" class="btns btn-login" disabled>로그인</button>
+                      <button type="button" class="btns btns-gray btn-join" disabled>회원가입</button>
+                    </div>
+                    <div class="find-account">
+                      <a href="#">아이디 찾기</a>
+                      <a href="#">비밀번호 찾기</a>
+                    </div>
+                  </form>
+                  
+                </div>
+              </section>
+            </div>
+            <!-- contents here :: e -->
+          </div>
+        </div>
+      </main>
+
+    </div>
+
+    <!-- pagescript -->
+    <script>
+      // password btn-show on-off
+      document.querySelector('.login .btn-show').addEventListener('click', () => {
+        document.querySelector('.login .btn-show').classList.toggle('show');
+      });
+    </script>
+  </body>
+</html>

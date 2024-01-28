@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko" data-color-theme="default">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../libs/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../libs/datepicker/datepicker.min.css" />
+    <link rel="stylesheet" href="../../libs/dropzone/dropzone.min.css" />
+    <link rel="stylesheet" href="../../libs/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../../css/styles.css" />
+    <!-- import script -->
+    <script defer src="../../libs/jquery/jquery-3.6.3.min.js"></script>
+    <script defer src="../../libs/bootstrap/bootstrap.bundle.min.js"></script>
+    <script defer src="../../libs/bootstrap/popper.min.js"></script>
+    <script defer src="../../libs/jquery/jquery-ui.js"></script>
+    <script defer src="../../libs/datepicker/datepicker-full.min.js"></script>
+    <script defer src="../../libs/dropzone/dropzone.min.js"></script>
+    <script defer src="../../libs/swiper/swiper-bundle.min.js"></script>
+    <script defer src="../../js/common.js"></script>
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.png" />
+    <title>HRI</title>
+  </head>
+  <body>
+    <div class="body-wrap">
+      <!-- 나의 현황 토글 :: s -->
+      <div id="myStatusType3">
+        <div class="main-contents-wrap">
+			<div class="toggle_status_wrap">
+				<h4>이러닝  <b>나의 학습현황</b></h4>
+					<div class="toggle_status">
+						<ul>
+							<li class="new">
+								<dl>
+									<dt>공단 전사 역량진단</dt>
+									<dd>
+										<time>학습일자 <span>2023.10.01 ~2024.03.29</span></time>
+										<a href="">학습창</a>
+									</dd>
+								</dl>
+								<p><em><i></i></em><b>70%</b></p>
+							</li>
+							<li class="new">
+								<dl>
+									<dt>나무의 지혜, 나는 나무처럼살고 싶다 공단 전사 역량진단 </dt>
+									<dd>
+										<time>학습일자 <span>2023.10.01 ~2024.03.29</span></time>
+										<a href="">학습창</a>
+									</dd>
+								</dl>
+								<p><em><i></i></em><b>100%</b></p>
+							</li>
+							<li>
+								<dl>
+									<dt>공단 전사 역량진단</dt>
+									<dd>
+										<time>학습일자 <span>2023.10.01 ~2024.03.29</span></time>
+										<a href="">학습창</a>
+									</dd>
+								</dl>
+								<p><em><i></i></em><b>2%</b></p>
+							</li>
+							<li>
+								<dl>
+									<dt>나무의 지혜, 나는 나무처럼살고 싶다 공단 전사 역량진단</dt>
+									<dd>
+										<time>학습일자 <span>2023.10.01 ~2024.03.29</span></time>
+										<a href="">학습창</a>
+									</dd>
+								</dl>
+								<p><em><i></i></em><b>20%</b></p>
+							</li>
+						</ul>
+						<p class="btn_r"><a href="">수강중인 과정 더보기</a></p>
+					</div>
+			</div>
+        </div>
+      </div>
+	   <script defer>
+        document.addEventListener('DOMContentLoaded', () => {
+		 $("#myStatusType3 .toggle_status li").each(function(){
+			  var per = $(this).find("p b").text();
+			  $(this).find("i").css("width", per);
+		  });
+		  $("#myStatusType3 .toggle_status_wrap h4").click(function(){
+			  if($(this).hasClass("open")){
+				  $(this).removeClass("open").next(".toggle_status").slideUp(200);
+			  } else {
+				  $(this).addClass("open").next(".toggle_status").slideDown(200);
+			  }
+		  });
+	  });
+	  </script>
+      <!-- 나의 현황 토글 :: e -->
+    </div>
+  </body>
+</html>

@@ -1,0 +1,115 @@
+/* 학습가이드 */
+.guide_learning {
+    width:calc(100% + 18px);
+    font-size:0;
+    dl{
+        position:relative;
+        display:inline-block;
+        box-sizing:border-box;
+        width:calc(33.33% - 36px);min-height:260px;
+        margin:0 36px 18px 0;
+        padding:24px 30px;
+        border:1px solid var(--gray-color-300);
+        border-radius:16px;
+        vertical-align:top;
+        text-align:center;
+        &:before{
+            content:'';
+            display:block;height:93px;
+            margin-bottom:13px;
+            background:url(../images/sub/img_guide_learning1.jpg) no-repeat center;background-size:auto 100%;
+        }
+        &:after{
+            content:'';
+            position:absolute;top:0;left:100%;
+            display:block;width:36px;height:100%;
+            background:url(../images/sub/ico_step.png) no-repeat center;
+        }
+        &:nth-last-child(1):after{display:None}
+        &:nth-child(2):before{background-image:url(../images/sub/img_guide_learning2.jpg)}
+        &:nth-child(3):before{background-image:url(../images/sub/img_guide_learning3.jpg)}
+        &:nth-child(4):before{background-image:url(../images/sub/img_guide_learning4.jpg)}
+        &:nth-child(5):before{background-image:url(../images/sub/img_guide_learning5.jpg)}
+        &:nth-child(6):before{background-image:url(../images/sub/img_guide_learning6.jpg)}
+        &:nth-child(7):before{background-image:url(../images/sub/img_guide_learning7.jpg)}
+        dt{
+            font-size:16px;
+            color:var(--gray-color-900);
+            font-weight:800;
+            b{
+                padding-right:8px;
+                color:var(--primary-color-500);
+            }
+        }
+        dd{
+            margin:13px 0 0;
+            font-size:14px;
+            line-height:140%;
+            color:var(--gray-color-600);
+            word-break:keep-all;
+            a{
+                display:inline-block;
+                font-size:12px;
+                &:after{
+                    content:'\e91f';
+                    display:inline-block;
+                    font-family: 'hri_iconset';
+                    font-size:18px;color:var(--gray-color-600);
+                    vertical-align:top;
+                }
+            }
+            &:nth-child(2){
+                min-height:40px;
+            }
+        }
+    }
+}
+
+/*
+* responsive
+*/
+
+@media (max-width: 1399.98px) {
+}
+
+@media (max-width: 1199.98px) {
+}
+
+@media (max-width: 991.98px) {
+    .guide_learning {
+        dl{
+            width:calc(50% - 36px);
+        }
+    }
+}
+
+@media (max-width: 767.98px) {
+    /* 학습가이드 */
+    .guide_learning {
+        width:100%;
+        dl{
+            width:100%;min-height:200px;
+            margin:0 0 36px 0;
+            padding:24px;
+            text-align:left;
+            &:after{
+                left:50%;top:100%;
+                width:36px;height:36px;
+                margin:1px 0 0 -18px;
+                transform:rotate(90deg);
+            }
+            dt{
+                font-size:20px;
+                b{
+                    display:block;
+                    margin-bottom:10px;
+                    font-size:14px;
+                }
+            }
+            dd+dd{text-align:right}
+        }
+    }
+}
+
+@media (max-width: 575.98px) {
+}

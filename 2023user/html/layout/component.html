@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="ko" data-color-theme="default">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../libs/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../libs/dropzone/dropzone.min.css" />
+    <link rel="stylesheet" href="../../libs/viewerjs/viewer.css" />
+    <link rel="stylesheet" href="../../libs/tomselect/tom-select.css" />
+    <link rel="stylesheet" href="../../css/styles.css" />
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.png" />
+    <title>HRI</title>
+    <style>
+      .wrap {
+        border: 0.0625rem solid #eee;
+        margin: 1rem;
+        padding: 1rem;
+        flex-wrap: wrap;
+      }
+
+      .input-box {
+        margin-bottom: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cpt-wrap">
+      <!-- button :: s -->
+      <div class="wrap">
+        <!-- default :: s -->
+        <button class="btns" type="button">Button</button>
+        <button class="btns" type="button" disabled>Button</button>
+        <!-- default :: e -->
+
+        <!-- default sm :: s -->
+        <button class="btns btns-md" type="button">Button</button>
+        <button class="btns btns-md" type="button" disabled>Button</button>
+        <!-- default sm :: e -->
+
+        <!-- default gray :: s -->
+        <button class="btns btns-gray" type="button">Button</button>
+        <button class="btns btns-gray" type="button" disabled>Button</button>
+        <!-- default gray :: e -->
+
+        <!-- default gray sm :: s -->
+        <button class="btns btns-gray btns-md" type="button">Button</button>
+        <button class="btns btns-gray btns-md" type="button" disabled>Button</button>
+        <!-- default gray sm :: e -->
+
+        <!-- default nomal :: s -->
+        <button class="btns btns-gray btns-sm" type="button">Button</button>
+        <button class="btns btns-gray btns-sm" type="button" disabled>Button</button>
+        <!-- default nomal :: e -->
+
+        <!-- default icon-before :: s -->
+        <button class="btns btns-icon-before" type="button"><i class="icon-calendar"></i>Button</button>
+        <button class="btns btns-icon-before" type="button" disabled><i class="icon-calendar"></i>삭제</button>
+        <!-- default icon-before :: e -->
+
+        <!-- default icon-before sm :: s -->
+        <button class="btns btns-icon-before btns-md" type="button"><i class="icon-calendar"></i>Button</button>
+        <button class="btns btns-icon-before btns-md" type="button" disabled><i class="icon-calendar"></i>Button</button>
+        <!-- default icon-before sm :: e -->
+
+        <!-- default icon-after :: s -->
+        <button class="btns btns-icon-after" type="button">Button<i class="icon-calendar"></i></button>
+        <button class="btns btns-icon-after" type="button" disabled>Button<i class="icon-calendar"></i></button>
+        <!-- default icon-after :: e -->
+
+        <!-- default icon-after sm :: s -->
+        <button class="btns btns-icon-after btns-md" type="button">Button<i class="icon-calendar"></i></button>
+        <button class="btns btns-icon-after btns-md" type="button" disabled>Button<i class="icon-calendar"></i></button>
+        <!-- default icon-after sm :: e -->
+
+        <!-- default gray icon-before :: s -->
+        <button class="btns btns-gray btns-icon-before" type="button"><i class="icon-calendar"></i>Button</button>
+        <button class="btns btns-gray btns-icon-before" type="button" disabled><i class="icon-calendar"></i>Button</button>
+        <!-- default gray icon-before :: e -->
+
+        <!-- default gray icon-before sm :: s -->
+        <button class="btns btns-gray btns-icon-before btns-md" type="button"><i class="icon-calendar"></i>Button</button>
+        <button class="btns btns-gray btns-icon-before btns-md" type="button" disabled><i class="icon-calendar"></i>Button</button>
+        <!-- default gray icon-before sm :: e -->
+
+        <!-- default gray icon-after :: s -->
+        <button class="btns btns-gray btns-icon-after" type="button">Button<i class="icon-calendar"></i></button>
+        <button class="btns btns-gray btns-icon-after" type="button" disabled>Button<i class="icon-calendar"></i></button>
+        <!-- default gray icon-after :: e -->
+
+        <!-- default gray icon-after sm :: s -->
+        <button class="btns btns-gray btns-icon-after btns-md" type="button">Button<i class="icon-calendar"></i></button>
+        <button class="btns btns-gray btns-icon-after btns-md" type="button" disabled>Button<i class="icon-calendar"></i></button>
+        <!-- default gray icon-after sm :: e -->
+      </div>
+
+      <div class="wrap">
+        <!-- default outline :: s -->
+        <button class="btns btns-outline" type="button">Button</button>
+        <button class="btns btns-outline" type="button" disabled>Button</button>
+        <!-- default outline :: e -->
+
+        <!-- default outline sm :: s -->
+        <button class="btns btns-outline btns-md" type="button">Button</button>
+        <button class="btns btns-outline btns-md" type="button" disabled>Button</button>
+        <!-- default outline sm :: e -->
+
+        <!-- default outline icon-before :: s -->
+        <button class="btns btns-outline btns-icon-before btns-md" type="button"><i class="icon-calendar"></i>Button</button>
+        <button class="btns btns-outline btns-icon-before btns-md" type="button" disabled><i class="icon-calendar"></i>Button</button>
+        <!-- default outline icon-before :: e -->
+      </div>
+      <!-- button :: s -->
+
+      <div class="wrap">
+        <!-- checkbox :: s -->
+        <label class="checkbox-wrap">
+          <input type="checkbox" name="" />
+          <span class="label-checkbox"></span>
+          one
+        </label>
+        <!-- checkbox :: s -->
+
+        <!-- radio-btn :: s -->
+        <label class="radio-wrap">
+          <input type="radio" name="radio" />
+          <span class="label-radio"></span>
+          one
+        </label>
+        <label class="radio-wrap">
+          <input type="radio" name="radio" disabled />
+          <span class="label-radio"></span>
+          two
+        </label>
+        <!-- radio-btn :: e -->
+
+        <!-- toggle switch btn :: s -->
+        <label class="switch-wrap">
+          <input type="checkbox" />
+          <span class="label-switch"></span>
+        </label>
+        <!-- toggle switch btn :: e -->
+      </div>
+
+      <!-- input :: s -->
+      <div class="wrap">
+        <!-- login :: s -->
+        <div class="login">
+          <div class="input-box">
+            <input type="email" name="" placeholder="이메일을 입력하세요." id="validationEmail" />
+          </div>
+          <div class="input-box">
+            <input type="password" name="" placeholder="패스워드를 입력하세요." id="validationPw" />
+            <button type="button" class="btn-show"><i class="icon-eye-on"></i></button>
+          </div>
+          <div class="input-box">
+            <input type="email" name="" placeholder="이메일을 입력하세요." id="validationEmail" class="is-invalid" />
+            <div id="validationEmail" class="invalid-feedback">이메일을 다시 입력해주세요.</div>
+          </div>
+          <div class="input-box">
+            <input type="password" name="" placeholder="패스워드를 입력하세요." id="validationPw" class="is-invalid" />
+            <button type="button" class="btn-show"><i class="icon-eye-on"></i></button>
+            <div id="validationPw" class="invalid-feedback">패스워드를 다시 입력해주세요.</div>
+          </div>
+          <div class="input-box">
+            <input type="email" name="" placeholder="Text" disabled />
+          </div>
+        </div>
+        <!-- login :: e -->
+
+        <div class="input-box calendar">
+          <input type="text" name="start" placeholder="시작일" value="" />
+          <span>~</span>
+          <input type="text" name="end" placeholder="종료일" value="" />
+        </div>
+
+        <div class="input-box single-calendar">
+          <input type="text" name="" placeholder="날짜선택" value="" />
+        </div>
+
+        <!-- period-group :: s -->
+        <div class="period-group">
+          <label class="select-peroid">
+            <input type="radio" name="rd_i_sPeriod" value="" />
+            <span class="label-radio">월</span>
+          </label>
+          <label class="select-peroid">
+            <input type="radio" name="rd_i_sPeriod" value="" />
+            <span class="label-radio">분기</span>
+          </label>
+          <label class="select-peroid">
+            <input type="radio" name="rd_i_sPeriod" value="" />
+            <span class="label-radio">반기</span>
+          </label>
+          <label class="select-peroid">
+            <input type="radio" name="rd_i_sPeriod" value="" />
+            <span class="label-radio">연</span>
+          </label>
+          <label class="select-peroid">
+            <input type="radio" name="rd_i_sPeriod" value="" />
+            <span class="label-radio">전체</span>
+          </label>
+
+          <label class="select-peroid">
+            <input type="radio" name="rd_i_sPeriod" value="" />
+            <span class="label-radio btn-datemore" data-bs-toggle="modal" data-bs-target="#datemore">자세히</span>
+
+            <div class="modal fade head-line" id="datemore" tabindex="-1" aria-labelledby="modalLineLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title" id="modalLineLabel">글 보기</h1>
+                  </div>
+                  <div class="modal-body">
+                    <div class="body-head">
+                      <div class="input-box calendar">
+                        <input type="text" name="" placeholder="" value="2022.01.01 ~ 2022.12.31" />
+                      </div>
+                    </div>
+
+                    <p>
+                      This is some placeholder content to show the scrolling behavior for modals. We use repeated line breaks to demonstrate how content can
+                      exceed minimum inner height, thereby showing inner scrolling. When content becomes longer than the predefined max-height of modal, content
+                      will be cropped and scrollable within the modal.
+                    </p>
+                    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+                    <p>This content should appear at the bottom after you scroll.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btns btns-gray" data-bs-dismiss="modal">취소</button>
+                    <button class="btns" type="button">적용</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </label>
+        </div>
+        <!-- period-group :: e -->
+
+        <div class="input-box">
+          <input type="email" name="" placeholder="Text" />
+        </div>
+
+        <!-- 기존소스 주석처리 -->
+        <div class="select-box">
+          <!-- <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">분류1</button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item active" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Action</a></li>
+          </ul> -->
+        </div>
+
+        <!-- dropdown :: s -->
+        <div class="dropdown-box">
+          <button class="dropdown-toggle btns btns-outline btns-icon-before btns-md" type="button" data-bs-toggle="dropdown" aria-expanded="false">정렬</button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item active" href="#">등록순</a></li>
+            <li><a class="dropdown-item" href="#">최신순</a></li>
+          </ul>
+        </div>
+        <!-- dropdown :: e -->
+
+        <!-- selectbox :: s -->
+        <div class="select-box">
+          <select>
+            <option value="">10개</option>
+            <option value="">20개</option>
+            <option value="">30개</option>
+          </select>
+        </div>
+        <!-- selectbox :: e -->
+
+        <div class="input-box">
+          <input type="text" name="" placeholder="Text" disabled />
+        </div>
+
+        <div class="input-box">
+          <p class="txt">TITLE</p>
+          <input type="text" name="" placeholder="Text" />
+        </div>
+
+        <div class="input-box search">
+          <input type="text" name="" placeholder="회원명, 직급, 아이디 검색" />
+          <button type="button" class="btn-search"><i class="icon-search"></i></button>
+        </div>
+      </div>
+      <!-- input :: e -->
+
+      <!-- tables :: s -->
+      <div class="wrap table-wrap">
+        <div class="tablehead-wrap">
+          <div class="input-box search">
+            <input type="text" name="" placeholder="회원명, 직급, 아이디 검색" />
+            <button type="button" class="btn-search"><i class="icon-search"></i></button>
+          </div>
+
+          <div class="select-box">
+            <select>
+              <option value="">10개</option>
+              <option value="">20개</option>
+              <option value="">30개</option>
+            </select>
+          </div>
+        </div>
+        <div class="tb-overflow">
+          <table class="table">
+            <colgroup>
+              <col style="width: 3.75rem" />
+              <col style="width: 5rem" />
+              <col />
+              <col style="width: 10%" />
+              <col style="width: 10%" />
+              <col style="width: 15%" />
+            </colgroup>
+            <thead>
+              <tr>
+                <th scope="col">
+                  <label class="checkbox-wrap">
+                    <input type="checkbox" name="" />
+                    <span class="label-checkbox"></span>
+                  </label>
+                </th>
+                <th scope="col" class="sort sort-up">NO</th>
+                <th scope="col">제목</th>
+                <th scope="col">제목</th>
+                <th scope="col">제목</th>
+                <th scope="col">교번</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <label class="checkbox-wrap">
+                    <input type="checkbox" name="" />
+                    <span class="label-checkbox"></span>
+                  </label>
+                </td>
+                <td>01</td>
+                <td>(7-8월) 환급_정규차수_1</td>
+                <td>107480100437011</td>
+                <td>@mdo</td>
+                <td>2022/12/31</td>
+              </tr>
+
+              <tr>
+                <td>
+                  <label class="checkbox-wrap">
+                    <input type="checkbox" name="" />
+                    <span class="label-checkbox"></span>
+                  </label>
+                </td>
+                <td>01</td>
+                <td>(7-8월) 환급_정규차수_1</td>
+                <td>107480100437011</td>
+                <td>@mdo</td>
+                <td>2022/12/31</td>
+              </tr>
+
+              <tr>
+                <td>
+                  <label class="checkbox-wrap">
+                    <input type="checkbox" name="" />
+                    <span class="label-checkbox"></span>
+                  </label>
+                </td>
+                <td>01</td>
+                <td>(7-8월) 환급_정규차수_1</td>
+                <td>107480100437011</td>
+                <td>@mdo</td>
+                <td>2022/12/31</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- pagination :: s -->
+        <div class="paging-wrap">
+          <button type="button" class="btn-prev"><i class="icon-arrow-left"></i></button>
+          <button type="button" class="active">1</button>
+          <button type="button">2</button>
+          <button type="button">3</button>
+          <button type="button">4</button>
+          <button type="button">5</button>
+          <button type="button" class="btn-next"><i class="icon-arrow-right"></i></button>
+        </div>
+        <!-- pagination :: e -->
+      </div>
+      <!-- tables :: e -->
+
+      <!-- tables sm :: s -->
+      <div class="wrap table-wrap">
+        <div class="tb-overflow">
+          <table class="table sm">
+            <colgroup>
+              <col style="width: 3.75rem" />
+              <col style="width: 5rem" />
+              <col />
+              <col style="width: 10%" />
+              <col style="width: 10%" />
+              <col style="width: 15%" />
+            </colgroup>
+            <thead>
+              <tr>
+                <th scope="col">
+                  <label class="checkbox-wrap">
+                    <input type="checkbox" name="" />
+                    <span class="label-checkbox"></span>
+                  </label>
+                </th>
+                <th scope="col" class="sort sort-up">NO</th>
+                <th scope="col">제목</th>
+                <th scope="col">제목</th>
+                <th scope="col">제목</th>
+                <th scope="col">교번</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <label class="checkbox-wrap">
+                    <input type="checkbox" name="" />
+                    <span class="label-checkbox"></span>
+                  </label>
+                </td>
+                <td>01</td>
+                <td>(7-8월) 환급_정규차수_1</td>
+                <td>107480100437011</td>
+                <td>@mdo</td>
+                <td>2022/12/31</td>
+              </tr>
+
+              <tr>
+                <td>
+                  <label class="checkbox-wrap">
+                    <input type="checkbox" name="" />
+                    <span class="label-checkbox"></span>
+                  </label>
+                </td>
+                <td>01</td>
+                <td>(7-8월) 환급_정규차수_1</td>
+                <td>107480100437011</td>
+                <td>@mdo</td>
+                <td>2022/12/31</td>
+              </tr>
+
+              <tr>
+                <td>
+                  <label class="checkbox-wrap">
+                    <input type="checkbox" name="" />
+                    <span class="label-checkbox"></span>
+                  </label>
+                </td>
+                <td>01</td>
+                <td>(7-8월) 환급_정규차수_1</td>
+                <td>107480100437011</td>
+                <td>@mdo</td>
+                <td>2022/12/31</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <!-- tables sm :: e -->
+
+      <!-- dropzone :: s -->
+      <div class="wrap">
+        <div class="file-upload">
+          <div class="sub-title-wrap">
+            <span class="sub-title">멀티 파일업로드</span>
+          </div>
+          <form action="/file-upload" name="">
+            <div class="file-dropzone" id="myDropzone01">
+              <div class="dz-msg">
+                <p><em>Click to upload</em> or drag and drop</p>
+                <p>파일을 이곳에 드래그 하세요</p>
+                <button type="button" class="btns">파일첨부</button>
+              </div>
+            </div>
+            <div class="file-list"></div>
+          </form>
+        </div>
+
+        <div class="file-upload">
+          <div class="sub-title-wrap">
+            <span class="sub-title">싱글 파일업로드</span>
+          </div>
+          <form action="/file-upload" name="">
+            <div class="file-dropzone single" id="myDropzone02">
+              <div class="dz-msg">
+                <p><em>Click to upload</em> or drag and drop</p>
+                <p>파일을 이곳에 드래그 하세요</p>
+                <button type="button" class="btns">파일첨부</button>
+              </div>
+            </div>
+            <div class="file-list"></div>
+          </form>
+        </div>
+      </div>
+      <!-- dropzone :: e -->
+
+      <!-- imgages viewer :: s -->
+      <div class="wrap">
+        <h3>이미지 1개</h3>
+        <img src="https://picsum.photos/400" alt="" style="width: 100px" id="imgViewer01" />
+
+        <h3 style="margin-top: 1rem">이미지 리스트</h3>
+        <ul id="imgViewer02" style="display: flex; gap: 0.5rem">
+          <li><img src="https://picsum.photos/400?random=1" alt="" style="width: 100px" /></li>
+          <li><img src="https://picsum.photos/400?random=2" alt="" style="width: 100px" /></li>
+          <li><img src="https://picsum.photos/400?random=3" alt="" style="width: 100px" /></li>
+          <li><img src="https://picsum.photos/400?random=4" alt="" style="width: 100px" /></li>
+          <li><img src="https://picsum.photos/400?random=5" alt="" style="width: 100px" /></li>
+          <li><img src="https://picsum.photos/400?random=6" alt="" style="width: 100px" /></li>
+        </ul>
+
+        <h3 style="margin-top: 1rem">버튼 이미지 링크</h3>
+        <button class="btns btns-md" type="button" id="imgViewer03" data-img-link="https://picsum.photos/400?random=7">썸네일보기</button>
+      </div>
+      <!-- imgages viewer :: e -->
+
+      <!-- selectbox :: s -->
+      <div class="wrap">
+        <select name="" id="" class="selectbox" autocomplete="off">
+          <option value="0" seleted>옵션0</option>
+          <option value="1">롭션1</option>
+          <option value="2">옵션2</option>
+          <option value="3">옵션3</option>
+        </select>
+        <script>
+          document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.selectbox').forEach((el) => {
+              let settings = {
+                create: true,
+                controlInput: null,
+                sortField: {
+                  field: 'text',
+                  direction: 'asc',
+                },
+              };
+              new TomSelect(el, settings);
+            });
+          });
+        </script>
+      </div>
+      <!-- selectbox :: e -->
+
+      <!-- modal :: s -->
+      <div class="wrap">
+        <!-- modal1 :: s -->
+        <button class="btns btns-icon-before" type="button" data-bs-toggle="modal" data-bs-target="#modal">Button</button>
+
+        <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title" id="modalLabel">상세기간 설정</h1>
+              </div>
+              <div class="modal-body">
+                <p>
+                  This is some placeholder content to show the scrolling behavior for modals. We use repeated line breaks to demonstrate how content can exceed
+                  minimum inner height, thereby showing inner scrolling. When content becomes longer than the predefined max-height of modal, content will be
+                  cropped and scrollable within the modal.
+                </p>
+                <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+                <p>This content should appear at the bottom after you scroll.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btns btns-gray" data-bs-dismiss="modal">취소</button>
+                <button class="btns" type="button">적용</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- modal1 :: e -->
+
+        <!-- modal2 :: s -->
+        <button class="btns btns-icon-before" type="button" data-bs-toggle="modal" data-bs-target="#modalLine">Button</button>
+
+        <div class="modal fade head-line" id="modalLine" tabindex="-1" aria-labelledby="modalLineLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title" id="modalLineLabel">글 보기</h1>
+              </div>
+              <div class="modal-body">
+                <div class="body-head">
+                  <div class="input-box calendar">
+                    <input type="text" name="" placeholder="" value="2022.01.01 ~ 2022.12.31" />
+                    <button type="button" class="btn-show"><i class="icon-calendar"></i></button>
+                  </div>
+                </div>
+
+                <p>
+                  This is some placeholder content to show the scrolling behavior for modals. We use repeated line breaks to demonstrate how content can exceed
+                  minimum inner height, thereby showing inner scrolling. When content becomes longer than the predefined max-height of modal, content will be
+                  cropped and scrollable within the modal.
+                </p>
+                <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+                <p>This content should appear at the bottom after you scroll.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btns btns-gray" data-bs-dismiss="modal">취소</button>
+                <button class="btns" type="button">적용</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- modal2 :: e -->
+      </div>
+      <!-- modal :: e -->
+    </div>
+
+    <!-- import script  -->
+    <script src="../../libs/jquery/jquery-3.6.3.min.js"></script>
+    <script src="../../libs/bootstrap/popper.min.js"></script>
+    <script src="../../libs/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../../libs/chartjs/chart.umd.js"></script>
+    <script src="../../libs/chartjs/chartjs-plugin-datalabels.min.js"></script>
+    <script src="../../libs/gaugejs/gauge.js"></script>
+    <script src="../../libs/dropzone/dropzone.min.js"></script>
+    <script src="../../libs/viewerjs/viewer.min.js"></script>
+    <script src="../../libs/tomselect/tom-select.complete.min.js"></script>
+    <!--<script src="../../js/common.js"></script>-->
+    <script src="../../js/chartFunc.js"></script>
+    <script>
+      //dropzone :: 실제 사용 옵션은 common.js dzOptions
+      const dzOption = {
+        url: '/file',
+        init: function () {
+          this.previewsContainer = this.element.nextElementSibling;
+        },
+        autoProcessQueue: true, // 자동업로드 여부 (true >바로 업로드, false > 서버에 processQueue() 호출시 올라감, 개발에서 맞게 처리 필요)
+        clickable: true,
+        createImageThumbnails: false,
+        maxFiles: 5,
+        parallelUploads: 1,
+        addRemoveLinks: true,
+        dictRemoveFile: '<i class="icon-trash"></i>',
+        uploadMultiple: false,
+        previewTemplate: `<div class="dz-preview dz-file-preview"> <div class="dz-details"> <div class="dz-size"><span data-dz-size></span></div> <div class="dz-filename"><span data-dz-name></span></div> </div> <div class="dz-progress"> <span class="dz-upload" data-dz-uploadprogress></span> </div> <div class="dz-error-message"><span data-dz-errormessage></span></div> <div class="dz-success-mark"> <svg width="54px" height="54px" viewBox="0 0 54 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <title>Check</title> <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <path d="M23.5,31.8431458 L17.5852419,25.9283877 C16.0248253,24.3679711 13.4910294,24.366835 11.9289322,25.9289322 C10.3700136,27.4878508 10.3665912,30.0234455 11.9283877,31.5852419 L20.4147581,40.0716123 C20.5133999,40.1702541 20.6159315,40.2626649 20.7218615,40.3488435 C22.2835669,41.8725651 24.794234,41.8626202 26.3461564,40.3106978 L43.3106978,23.3461564 C44.8771021,21.7797521 44.8758057,19.2483887 43.3137085,17.6862915 C41.7547899,16.1273729 39.2176035,16.1255422 37.6538436,17.6893022 L23.5,31.8431458 Z M27,53 C41.3594035,53 53,41.3594035 53,27 C53,12.6405965 41.3594035,1 27,1 C12.6405965,1 1,12.6405965 1,27 C1,41.3594035 12.6405965,53 27,53 Z" stroke-opacity="0.198794158" stroke="#747474" fill-opacity="0.816519475" fill="#FFFFFF"></path> </g> </svg> </div> <div class="dz-error-mark"> <svg width="54px" height="54px" viewBox="0 0 54 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <title>Error</title> <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g stroke="#747474" stroke-opacity="0.198794158" fill="#FFFFFF" fill-opacity="0.816519475"> <path d="M32.6568542,29 L38.3106978,23.3461564 C39.8771021,21.7797521 39.8758057,19.2483887 38.3137085,17.6862915 C36.7547899,16.1273729 34.2176035,16.1255422 32.6538436,17.6893022 L27,23.3431458 L21.3461564,17.6893022 C19.7823965,16.1255422 17.2452101,16.1273729 15.6862915,17.6862915 C14.1241943,19.2483887 14.1228979,21.7797521 15.6893022,23.3461564 L21.3431458,29 L15.6893022,34.6538436 C14.1228979,36.2202479 14.1241943,38.7516113 15.6862915,40.3137085 C17.2452101,41.8726271 19.7823965,41.8744578 21.3461564,40.3106978 L27,34.6568542 L32.6538436,40.3106978 C34.2176035,41.8744578 36.7547899,41.8726271 38.3137085,40.3137085 C39.8758057,38.7516113 39.8771021,36.2202479 38.3106978,34.6538436 L32.6568542,29 Z M27,53 C41.3594035,53 53,41.3594035 53,27 C53,12.6405965 41.3594035,1 27,1 C12.6405965,1 1,12.6405965 1,27 C1,41.3594035 12.6405965,53 27,53 Z"></path> </g> </g> </svg> </div> </div>`,
+      };
+
+      const dzSingleOption = {
+        url: '/file',
+        init: function () {
+          this.on('maxfilesexceeded', (file) => {
+            this.removeAllFiles();
+            this.addFile(file);
+          });
+          this.on('thumbnail', (file, dataUrl) => {
+            for (let item of this.element.childNodes) {
+              console.log(item.nodeName);
+              if (item.nodeName === 'IMG') item.remove();
+            }
+            const imgEle = document.createElement('img');
+            imgEle.classList.add('img-thumb');
+            //imgEle.setAttribute('data-dz-thumbnail');
+            imgEle.alt = file.name;
+            imgEle.src = dataUrl;
+
+            //return setTimeout(() => this.element.appendChild(imgEle), 0);
+            return this.element.appendChild(imgEle);
+          });
+          this.on('removedfile', (file) => {
+            for (let item of this.element.childNodes) {
+              console.log(item.nodeName);
+              if (item.nodeName === 'IMG') item.remove();
+            }
+          });
+
+          this.previewsContainer = this.element.nextElementSibling;
+        },
+        autoProcessQueue: true,
+        clickable: true,
+        createImageThumbnails: true,
+        thumbnailWidth: 320,
+        maxFiles: 1,
+        parallelUploads: 1,
+        addRemoveLinks: true,
+        dictRemoveFile: '<i class="icon-trash"></i>',
+        uploadMultiple: false,
+        previewTemplate: `<div class="dz-preview dz-file-preview"> <div class="dz-details"> <div class="dz-size"><span data-dz-size></span></div> <div class="dz-filename"><span data-dz-name></span></div> </div> <div class="dz-progress"> <span class="dz-upload" data-dz-uploadprogress></span> </div> <div class="dz-error-message"><span data-dz-errormessage></span></div> <div class="dz-success-mark"> <svg width="54px" height="54px" viewBox="0 0 54 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <title>Check</title> <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <path d="M23.5,31.8431458 L17.5852419,25.9283877 C16.0248253,24.3679711 13.4910294,24.366835 11.9289322,25.9289322 C10.3700136,27.4878508 10.3665912,30.0234455 11.9283877,31.5852419 L20.4147581,40.0716123 C20.5133999,40.1702541 20.6159315,40.2626649 20.7218615,40.3488435 C22.2835669,41.8725651 24.794234,41.8626202 26.3461564,40.3106978 L43.3106978,23.3461564 C44.8771021,21.7797521 44.8758057,19.2483887 43.3137085,17.6862915 C41.7547899,16.1273729 39.2176035,16.1255422 37.6538436,17.6893022 L23.5,31.8431458 Z M27,53 C41.3594035,53 53,41.3594035 53,27 C53,12.6405965 41.3594035,1 27,1 C12.6405965,1 1,12.6405965 1,27 C1,41.3594035 12.6405965,53 27,53 Z" stroke-opacity="0.198794158" stroke="#747474" fill-opacity="0.816519475" fill="#FFFFFF"></path> </g> </svg> </div> <div class="dz-error-mark"> <svg width="54px" height="54px" viewBox="0 0 54 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <title>Error</title> <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g stroke="#747474" stroke-opacity="0.198794158" fill="#FFFFFF" fill-opacity="0.816519475"> <path d="M32.6568542,29 L38.3106978,23.3461564 C39.8771021,21.7797521 39.8758057,19.2483887 38.3137085,17.6862915 C36.7547899,16.1273729 34.2176035,16.1255422 32.6538436,17.6893022 L27,23.3431458 L21.3461564,17.6893022 C19.7823965,16.1255422 17.2452101,16.1273729 15.6862915,17.6862915 C14.1241943,19.2483887 14.1228979,21.7797521 15.6893022,23.3461564 L21.3431458,29 L15.6893022,34.6538436 C14.1228979,36.2202479 14.1241943,38.7516113 15.6862915,40.3137085 C17.2452101,41.8726271 19.7823965,41.8744578 21.3461564,40.3106978 L27,34.6568542 L32.6538436,40.3106978 C34.2176035,41.8744578 36.7547899,41.8726271 38.3137085,40.3137085 C39.8758057,38.7516113 39.8771021,36.2202479 38.3106978,34.6538436 L32.6568542,29 Z M27,53 C41.3594035,53 53,41.3594035 53,27 C53,12.6405965 41.3594035,1 27,1 C12.6405965,1 1,12.6405965 1,27 C1,41.3594035 12.6405965,53 27,53 Z"></path> </g> </g> </svg> </div> </div>`,
+      };
+
+      let fileDrop01 = new Dropzone('#myDropzone01', dzOption);
+      let fileDrop02 = new Dropzone('#myDropzone02', dzSingleOption);
+
+      //image viewer 이것도 실제 사용은 common.js에 있는 오브젝트로 사용
+
+      const imgViewerOpt = {
+        movable: false,
+        rotatable: false,
+        scalable: false,
+        toolbar: {
+          zoomIn: false,
+          zoomOut: false,
+          oneToOne: false,
+          reset: false,
+          prev: {
+            show: true,
+            size: 'large',
+          },
+          next: {
+            show: true,
+            size: 'large',
+          },
+          play: false,
+          rotateLeft: false,
+          rotateRight: false,
+          flipHorizontal: false,
+          flipVertical: false,
+        },
+      };
+      const imgViewer01 = new Viewer(document.querySelector('#imgViewer01'), imgViewerOpt);
+
+      const imgViewer02 = new Viewer(document.querySelector('#imgViewer02'), imgViewerOpt);
+
+      //클릭 시 이미지 노드 생성 및 뷰어 인스턴스 생성
+      function onClickMakeViewer(e) {
+        if (!e.currentTarget.dataset.imgLink) return;
+        const url = e.currentTarget.dataset.imgLink;
+        let image = new Image();
+        image.src = url;
+        let viewer = new Viewer(image, {
+          ...imgViewerOpt,
+          hidden: function () {
+            viewer.destroy();
+          },
+        });
+        viewer.show();
+      }
+      document.querySelector('#imgViewer03').addEventListener('click', onClickMakeViewer);
+    </script>
+  </body>
+</html>

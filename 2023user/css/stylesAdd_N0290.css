@@ -1,0 +1,46 @@
+/* N0290 �߿����� �߰� css*/
+@charset "UTF-8";
+/*mr-jw-group*/
+
+/*myStatus*/
+#myStatus .cont .e-learning .data .txt {
+    line-height: 54px;
+}
+#myStatus .cont .microlearning .status {
+    margin-top: 2rem;
+}
+@media (max-width: 767.98px) {
+#myStatus .cont .e-learning .data .txt {
+        line-height: 35px;}
+}
+#myStatus .cont .e-learning .data .txt,
+#myStatus .cont .microlearning .data .txt {
+  min-width: 8rem;
+}
+
+/*Footer*/
+#footerType1 .footer-items img.logo-image {
+    max-height: 40px;
+    width: fit-content;
+}
+@media (max-width: 767.98px) {
+    #footerType1 .footer-items img.logo-image {
+        display:none;
+    }
+}
+
+/*main-slider*/
+#mainHero6 .items .txt-wrap dl {
+    height: 380px;
+}
+@media (max-width: 767.98px) {
+    #mainHero6 .items .txt-wrap dl {
+        height: 340px;
+    }
+    #mainHero6 .items .txt-wrap dl+img {
+        top: -30px;
+        right: -10px;
+        max-width: 80%;
+    }
+}
+

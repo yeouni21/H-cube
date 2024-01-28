@@ -1,0 +1,77 @@
+.join-popup {
+  &.memberpage {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.modal {
+  &.input-companyinfo {
+    .modal-body {
+      .row {
+        padding-top: 1rem;
+
+        &:first-of-type {
+          padding-top: 0;
+        }
+      }
+
+      .radio-wrap {
+        margin-top: 0.75rem;
+        display: block;
+
+        &:first-of-type {
+          margin-top: 1.25rem;
+        }
+      }
+
+      .address {
+        .zip-code {
+          .inputbox-underline {
+            flex: 1;
+          }
+        }
+
+        .detail-address {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+/*
+* responsive
+*/
+
+@media (max-width: 1399.98px) {
+}
+
+@media (max-width: 1199.98px) {
+}
+
+@media (max-width: 991.98px) {
+}
+
+@media (max-width: 767.98px) {
+}
+
+@media (max-width: 575.98px) {
+  .modal {
+    &.input-companyinfo {
+      .modal-body {
+        .email-inputbox {
+          .inputbox-underline {
+            input {
+              font-size: 0.75rem;
+
+              &::placeholder {
+                font-size: 0.75rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

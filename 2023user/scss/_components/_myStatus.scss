@@ -1,0 +1,383 @@
+#myStatus {
+  width: 100%;
+  padding: 4.5rem 2rem;
+
+  .contents-wrap {
+    display: flex;
+    align-items: flex-end;
+    gap: 3rem;
+    flex-wrap: wrap;
+  }
+
+  .cont {
+    &:first-child {
+      min-width: 18.625rem;
+      flex: 1;
+    }
+
+    &:last-child {
+      display: flex;
+      align-items: center;
+      gap: 3.125rem;
+      flex: 3;
+    }
+
+    .greeting {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--gray-color-900);
+
+      .user {
+        color: var(--primary-color-500);
+        margin-bottom: 0.5rem;
+      }
+    }
+
+    .credit,
+    .stamp {
+      a {
+        background-color: var(--gray-color-50);
+        border: 1px solid var(--white-color);
+        border-radius: 1rem;
+        margin-top: 2.375rem;
+        position: relative;
+        box-shadow: 0px 3px 12px rgba(62, 73, 84, 0.1);
+        padding: 1.875rem 3rem 1.875rem 7rem;
+        display: block;
+
+        &::before {
+          content: "";
+          display: inline-block;
+          width: 4rem;
+          height: 4rem;
+          background: var(--white-color) url('../images/main/icon_mycredit.png') center/2rem no-repeat;
+          border-radius: 50%;
+          position: absolute;
+          top: 50%;
+          left: 1.5rem;
+          transform: translateY(-50%);
+        }
+  
+        &::after {
+          content: "\e91f";
+          font-family: 'hri_iconset';
+          color: var(--gray-color-400);
+          font-size: 1.5rem;
+          position: absolute;
+          top: 50%;
+          right: 1.5rem;
+          transform: translateY(-50%);
+        }
+
+        .title {
+          font-size: 0.75rem;
+          font-weight: 600;
+          color: var(--gray-color-500);
+        }
+  
+        .num {
+          font-size: 1.5rem;
+          font-weight: 700;
+          color: var(--gray-color-900);
+          margin-top: 0.5rem;
+          max-width: 7rem;
+          @include text-overflow;
+        }
+      }
+    }
+
+    .stamp {
+      a {
+        margin-top: 1.5rem;
+
+        &::before {
+          background-image: url('../images/main/icon_mystamp.png');
+        }
+      }
+    }
+
+    .e-learning,
+    .microlearning {
+      flex: 1;
+      position: relative;
+      display: block;
+      padding: 2.5rem;
+      background-color: var(--primary-color-500);
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      box-shadow: 4px 8px 36px rgba(100, 100, 100, 0.4);
+      border-radius: 2rem;
+
+      &::after {
+        content: "";
+        display: inline-block;
+        width: 18.5rem;
+        height: 18.5rem;
+        background: url('../images/main/img_e-learning_idea.png') center/cover no-repeat;
+        position: absolute;
+        top: -5.8rem;
+        right: -4.8rem;
+      }
+
+      .title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--white-color);
+      }
+
+      .myrecent {
+        font-size: 0.75rem;
+        font-weight: 400;
+        color: var(--primary-color-900);
+        margin-top: 0.625rem;
+
+        &::after {
+          content: "\e91f";
+          font-family: 'hri_iconset';
+          font-size: 1rem;
+          font-weight: 500;
+          margin-left: 0.25rem;
+          position: relative;
+          top: 0.1563rem;
+        }
+      }
+
+      .status {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        gap: 1rem;
+        margin-top: 1rem;
+      }
+
+      .data {
+        font-size: 0.875rem;
+        font-weight: 600;
+        color: var(--white-color);
+        display: flex;
+        align-items: center;
+        margin-top: 0.875rem;
+
+        .txt {
+          opacity: 0.7;
+          min-width: 4.0625rem;
+          flex: none;
+        }
+
+        .num {
+          font-size: 2.25rem;
+          font-weight: 800;
+          margin-left: 1rem;
+          opacity: 1;
+          max-width: 8.5625rem;
+          @include text-overflow;
+        }
+      }
+
+      .compare {
+        text-align: right;
+        background-color: var(--white-color);
+        border-radius: 0.25rem;
+        padding: 0.375rem 0.625rem;
+        margin-left: auto;
+        flex: none;
+
+        .data {
+          font-size: 1.125rem;
+          font-weight: 700;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          margin-top: 0;
+
+          .num {
+            font-size: 1.125rem;
+            margin-left: 0.25rem;
+          }
+        }
+
+        &.down {
+          .data {
+            color: var(--error-color-500);
+
+            &::before {
+              content: "";
+              display: inline-block;
+              width: 1.5rem;
+              height: 1.5rem;
+              background: url('../images/main/icon_arrowdown.png') center/cover no-repeat;
+            }
+          }
+        }
+        
+        &.up {
+          .data {
+            color: var(--primary-color-600);
+
+            &::before {
+              content: "";
+              display: inline-block;
+              width: 1.5rem;
+              height: 1.5rem;
+              background: url('../images/main/icon_arrowup.png') center/cover no-repeat;
+            }
+          }
+        }
+
+        .txt {
+          font-size: 0.6875rem;
+          font-weight: 600;
+          color: var(--gray-color-900);
+          margin-top: 0.125rem;
+        }
+      }
+    }
+
+    .microlearning {
+      background-color: var(--secondary-color-500);
+
+      &::after {
+        background: url('../images/main/img_micolearning_idea.png') center/cover no-repeat;
+      }
+
+      .myrecent {
+        color: var(--secondary-color-900);
+      }
+    }
+  }
+}
+
+/*
+* responsive
+*/
+
+@media (max-width: 1399.98px) {
+}
+
+@media (max-width: 1199.98px) {
+}
+
+@media (max-width: 991.98px) {
+  #myStatus {
+    .contents-wrap {
+      display: block;
+    }
+
+    .cont {
+      &:last-child {
+        margin: 3rem 0.875rem 0 0.625rem;
+        gap: 2rem;
+        flex-wrap: wrap;
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  #myStatus {
+    padding: 2rem 1rem;
+
+    .cont {
+      &:last-child {
+        display: block;
+      }
+
+      .greeting {
+        font-size: 1.25rem;
+        line-height: 1.3;
+
+        .user {
+          margin-bottom: 0.25rem;
+        }
+      }
+
+      .credit,
+      .stamp {
+        a {
+          margin-top: 1.5rem;
+          padding: 1.375rem 7rem;
+
+          .num {
+            font-size: 1.25rem;
+            margin-top: 0.125rem;
+          }
+        }
+      }
+
+      .stamp {
+        a {
+          margin-top: 0.75rem;
+        }
+      }
+
+      .e-learning,
+      .microlearning {
+        &::after {
+          width: 14rem;
+          height: 14rem;
+          top: -3.7rem;
+          right: -2.9rem;
+        }
+
+        padding: 2rem 1.5rem 2rem 2rem;
+
+        .title {
+          font-size: 1.25rem;
+        }
+
+        .myrecent {
+          font-size: 0.6875rem;
+        }
+
+        .status {
+          flex-wrap: wrap;
+          gap: 0.5rem;
+          margin-top: 0.25rem;
+        }
+
+        .data {
+          font-size: 0.6875rem;
+          margin-top: 0.625rem;
+
+          .txt {
+            min-width: 3rem;
+          }
+
+          .num {
+            font-size: 1.5rem;
+            max-width: 5.75rem;
+            margin-left: 0.5rem;
+          }
+        }
+
+        .compare {
+          padding: 0.25rem 0.5rem;
+
+          .data {
+            font-size: 0.875rem;
+
+            .num {
+              font-size: 0.875rem;
+            }
+          }
+
+          &.down,
+          &.up {
+            .data {
+              &::before {
+                width: 1rem;
+                height: 1rem;
+              }
+            }
+          }
+        }
+      }
+
+      .microlearning {
+        margin-top: 2.7rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+}

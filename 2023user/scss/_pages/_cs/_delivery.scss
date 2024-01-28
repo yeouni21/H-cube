@@ -1,0 +1,120 @@
+.cs {
+  padding-top: 1.5rem;
+
+  .delivery {
+    .tb-cs-delivery {
+      tbody {
+        tr {
+          td {
+            &:last-of-type {
+              color: var(--gray-color-700);
+            }
+          }
+        }
+        
+        td {
+          &:nth-child(2){
+            font-size: 1rem;
+            font-weight: 600;
+          }
+
+          i {
+            font-size: 1.125rem;
+            color: var(--gray-color-500);
+          }
+        }
+      }
+    }
+  }
+}
+
+/*
+* responsive
+*/
+
+@media (max-width: 1399.98px) {
+}
+
+@media (max-width: 1199.98px) {
+}
+
+@media (max-width: 991.98px) {
+}
+
+@media (max-width: 767.98px) {
+  .cs {
+    padding-top: 0;
+  }
+
+  .delivery {
+    .tb-cs-delivery {
+      .table {
+        min-width: 100%;
+
+        col {
+          width: 100% !important;
+
+          &:first-child{
+            display: none;
+          }
+        }
+
+        thead {
+          display: none;
+        }
+
+        tbody {
+          tr {
+            position: relative;
+            border-bottom: 1px solid var(--gray-color-300);
+            display: block;
+            padding: 1.5rem 1rem;
+            font-size:0;
+            &:last-child {
+              border-color: var(--gray-color-900);
+            }
+          }
+
+          td {
+            display: block;
+            border-bottom: none;
+            text-align: left;
+            padding: 0;
+            height: auto;
+            font-size:0.85rem;
+
+            &:first-child{
+              display: none;
+              margin-top: 0;
+            }
+            &:nth-child(2){
+              padding-right:60px
+            }
+            &:nth-child(3) {
+              @include multi-text-overflow(1);
+              margin-top: 0.5rem;
+              font-weight: 400;
+            }
+
+            &:nth-child(4){
+              position:absolute;top:1.5rem;right:1.5rem;
+            }
+            &:nth-child(5),
+            &:nth-child(6){
+                display:inline-block;width:calc(50% - 10px);
+                margin:15px 5px 0;
+                a{
+                    display:block;
+                    width:100%;
+                    text-align:center
+                }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+}

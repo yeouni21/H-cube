@@ -1,0 +1,153 @@
+.board-write {
+  .write-caution{
+    margin-bottom:18px;
+    font-size:14px;
+    color:var(--gray-color-700);
+    line-height:140%;
+    word-break:keep-all;
+  }
+  .write-cont {
+    border-top: 2px solid var(--gray-color-900);
+    border-bottom: 1px solid var(--gray-color-900);
+    padding: 2.875rem 2.375rem 3.0625rem;
+  }
+
+  .row {
+    margin-top: 1.5rem;
+
+    &:first-child {
+      margin-top: 0;
+    }
+    .email-inputbox .selectbox .ts-control{
+      height: 2.5rem;
+      padding:0.625rem 1rem;
+    }
+    .checked{
+      .radio-wrap{
+        margin-top:10px;
+      }
+    }
+  }
+
+  .txt {
+    min-height:14px;
+    margin-bottom: 0.625rem !important;
+    font-size: 0.875rem;
+    font-weight: 600;
+  }
+
+  .dropdown-box {
+    .btn-select {
+      width: 100%;
+    }
+  }
+
+  .file-upload {
+    form {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+
+      .file-dropzone,
+      .file-list {
+        flex: 1;
+      }
+
+      .dz-preview {
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+
+  .agree-wrap {
+    font-size: 0.875rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+
+    .desc {
+      color: var(--gray-color-500);
+      position: relative;
+      top: -0.125rem;
+
+      &::after {
+        content: "\e91f";
+        font-family: "hri_iconset";
+        font-size: 1rem;
+        position: relative;
+        top: 0.125rem;
+        margin-left: 0.125rem;
+      }
+    }
+  }
+
+  .btn-wrap {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: flex-end;
+
+    button {
+      margin-left: 0.375rem;
+
+      &:first-child {
+        margin-right: auto;
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+/*
+* responsive
+*/
+
+@media (max-width: 1399.98px) {
+}
+
+@media (max-width: 1199.98px) {
+}
+
+@media (max-width: 991.98px) {
+}
+
+@media (max-width: 767.98px) {
+  .board-write {
+    .txt{
+      min-height:0px;
+    }
+    .write-cont {
+      padding: 2.875rem 0 3.0625rem;
+    }
+
+    .row {
+      &.row-cols-2 {
+        >* {
+          width: 100%;
+        }
+      }
+      .col.mt{
+        margin-top:1.5rem;
+      }
+    }
+
+    .file-upload {
+      form {
+        display: block;
+
+        .dz-preview {
+          &:first-child {
+            margin-top: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+}

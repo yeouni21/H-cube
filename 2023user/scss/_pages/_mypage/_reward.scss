@@ -1,0 +1,49 @@
+.reward {
+  .reward-contents {
+    margin-top: 3.5rem;
+
+    .table {
+      td {
+        &.saveup-stamp {
+          color: var(--primary-color-500);
+        }
+      }
+    }
+  }
+}
+
+/*
+* responsive
+*/
+
+@media (max-width: 1399.98px) {
+}
+
+@media (max-width: 1199.98px) {
+}
+
+@media (max-width: 991.98px) {
+}
+
+@media (max-width: 767.98px) {
+  .reward {
+    .reward-contents {
+      .table {
+        min-width: 27rem;
+      }
+
+      .tb-mystamp {
+        th,
+        td,
+        tr {
+          &:nth-of-type(3) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+}
